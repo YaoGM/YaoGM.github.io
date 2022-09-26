@@ -4,12 +4,44 @@
   
   
   <entry>
-    <title>iyiy</title>
+    <title>我的第一篇文章</title>
+    <link href="/2022/09/26/yiuyi/"/>
+    <url>/2022/09/26/yiuyi/</url>
+    
+    <content type="html"><![CDATA[<h3 id="《猜》"><a href="#《猜》" class="headerlink" title="《猜》"></a>《猜》</h3><p><strong>你猜，我要飞往何方</strong><br><strong>我猜，你一定会指一指天上</strong><br><strong>可惜云朵只配做我的翅膀</strong><br><strong>我要飞到连星星都追不到的地方</strong><br><strong>你猜，那里到底是什么景象</strong><br><strong>我猜，那里美的跟你一样</strong></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>p1</title>
+    <link href="/2022/09/26/p1/"/>
+    <url>/2022/09/26/p1/</url>
+    
+    <content type="html"><![CDATA[<h3 id="《猜》"><a href="#《猜》" class="headerlink" title="《猜》"></a>《猜》</h3><p><strong>你猜，我要飞往何方</strong><br><strong>我猜，你一定会指一指天上</strong><br><strong>可惜云朵只配做我的翅膀</strong><br><strong>我要飞到连星星都追不到的地方</strong><br><strong>你猜，那里到底是什么景象</strong><br><strong>我猜，那里美的跟你一样</strong></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>哦欸头儿</title>
     <link href="/2022/09/25/paper1/"/>
     <url>/2022/09/25/paper1/</url>
     
     <content type="html"><![CDATA[<h2 id="这是测试文档-–by-姚光明"><a href="#这是测试文档-–by-姚光明" class="headerlink" title="这是测试文档 –by 姚光明"></a>这是测试文档 –by 姚光明</h2>]]></content>
     
+    
+    <categories>
+      
+      <category>hello</category>
+      
+    </categories>
     
     
   </entry>
