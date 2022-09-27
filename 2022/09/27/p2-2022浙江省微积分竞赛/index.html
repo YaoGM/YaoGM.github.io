@@ -24,7 +24,7 @@
 <meta property="og:description" content="前几天刚刚考完，今天来对一些题目做一下分析和总结，毕竟对错误的分析和探索是数学的魅力之一，解析题目：3，4，7，8，9">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-09-27T04:40:40.000Z">
-<meta property="article:modified_time" content="2022-09-27T11:14:30.467Z">
+<meta property="article:modified_time" content="2022-09-27T11:20:31.067Z">
 <meta property="article:author" content="YaoGuangMing">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -298,14 +298,12 @@
 <p>先附上两个答案网站<br><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/0ds94YBKREeQL5MbW5rkNg">网站一</a> <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/MIhjpTydak2_lACfi6pLtw">网站2</a></p>
 </blockquote>
 <h3 id="题目三"><a href="#题目三" class="headerlink" title="题目三"></a>题目三</h3><h4 id="iint-e-x-2-2xy-2y-2-dxdy-x-y-in-R"><a href="#iint-e-x-2-2xy-2y-2-dxdy-x-y-in-R" class="headerlink" title="$\iint e^{-(x^2-2xy+2y^2)} dxdy $ $ x,y \in R$"></a>$\iint e^{-(x^2-2xy+2y^2)} dxdy $ $ x,y \in R$</h4><ul>
-<li><p>：<br>这是一个很有意思的二重积分，相信大多数人第一时间都是想到换元，$ x&#x3D;r\cos{\theta},y&#x3D;r\sin{\theta}$ 代入，笔者当时也是这么想的，不过代入后发现这事不对劲，e的指数并不是我们想出现的$r^2$，而是一个含$\theta$的表达式，这种情况下我们没有办法进行积分，而正确的做法是这样换元，先对指数进行配方，配成$(x-y)^2+y^2$ ，然后进行换元<br>$x-y&#x3D;r\cos{\theta} $<br>$y&#x3D;r\sin{\theta} $                       </p>
-<p>这样进行换元后，我们自然会产生另一个疑问，换元之后积分变成了对$drd\theta$积分，而$drd\theta$与$dxdy$有怎样的换算关系呢，或者有怎样的比例关系呢？这个疑问请参考后续文章，最终它们的关系是$dxdy&#x3D;rdrd\theta$，之后就是一个很简单的积分了，不再赘述。</p>
-</li>
+<li>：<br>这是一个很有意思的二重积分，相信大多数人第一时间都是想到换元，$ x&#x3D;r\cos{\theta},y&#x3D;r\sin{\theta}$ 代入，笔者当时也是这么想的，不过代入后发现这事不对劲，e的指数并不是我们想出现的$r^2$，而是一个含$\theta$的表达式，这种情况下我们没有办法进行积分，而正确的做法是这样换元，先对指数进行配方，配成$(x-y)^2+y^2$ ，然后进行换元<br>$x-y&#x3D;r\cos{\theta} $，$y&#x3D;r\sin{\theta} ​$<br>这样进行换元后，我们自然会产生另一个疑问，换元之后积分变成了对$drd\theta$积分，而$drd\theta$与$dxdy$有怎样的换算关系呢，或者有怎样的比例关系呢？这个疑问请参考后续文章，最终它们的关系是$dxdy&#x3D;rdrd\theta$，之后就是一个很简单的积分了，不再赘述。</li>
 </ul>
 <hr>
-<h3 id="题目七"><a href="#题目七" class="headerlink" title="题目七"></a>题目七</h3><p>求<br>$$a_{11}x+a_{12}y+a_{13}z&#x3D;\pm h_1$$<br>$$a_{21}x+a_{22}y+a_{23}z&#x3D;\pm h_2 $$<br>$$a_{31}x+a_{32}y+a_{33}z&#x3D;\pm h_3 $$<br>$$\Delta &#x3D;| (a_{ij})| \neq 0$$围成的平行六面体的体积</p>
+<h3 id="题目七"><a href="#题目七" class="headerlink" title="题目七"></a>题目七</h3><p>求<br>$a_{11}x+a_{12}y+a_{13}z&#x3D;\pm h_1$<br>$a_{21}x+a_{22}y+a_{23}z&#x3D;\pm h_2 $<br>$a_{31}x+a_{32}y+a_{33}z&#x3D;\pm h_3 $<br>$\Delta &#x3D;| (a_{ij})| \neq 0$围成的平行六面体的体积</p>
 <ul>
-<li>:<br>这里先写题目七，因为笔者觉得它跟第三题的思想很像，所以就挨着一块写了。这道题目是求一个六面体的体积，笔者一开始思路有两个，一个是解方程，通过求出一条边的两个交点，然后底面积成高，不过计算量巨大，别看只是一个三阶的方阵，但也很麻烦。第二个想法既然是体积那应该可以用积分来做，不过这里的难处是x,y,z三个变量的范围没办法确定，然后笔者考试就卡死在这了…….这里给出一种解法设u，v，w，令<br>$$a_{11}x+a_{12}y+a_{13}z&#x3D;u $$<br>$$a_{21}x+a_{22}y+a_{23}z&#x3D;v $$<br>$$a_{31}x+a_{32}y+a_{33}z&#x3D;w $$<br>这时$ -h1 \leq u \leq h1， -h2 \leq v \leq h2，-h3 \leq w \leq h3  $然后对u,v,w进行三重积分，不过这里仍然有和第三题相同的疑问，$dxdydz$与$dudvdw$之间的比例或者系数关系是什么，只有知道了这个关系我们才能从一种积分变成对另一种变量的积分，同样这里也只给出结果，$dudvdw&#x3D;|dej(a_{ij})| dxdydz$，之后积分就可以了。</li>
+<li>:<br>这里先写题目七，因为笔者觉得它跟第三题的思想很像，所以就挨着一块写了。这道题目是求一个六面体的体积，笔者一开始思路有两个，一个是解方程，通过求出一条边的两个交点，然后底面积成高，不过计算量巨大，别看只是一个三阶的方阵，但也很麻烦。第二个想法既然是体积那应该可以用积分来做，不过这里的难处是x,y,z三个变量的范围没办法确定，然后笔者考试就卡死在这了…….这里给出一种解法设u，v，w，令<br>$a_{11}x+a_{12}y+a_{13}z&#x3D;u $<br>$a_{21}x+a_{22}y+a_{23}z&#x3D;v $<br>$a_{31}x+a_{32}y+a_{33}z&#x3D;w $<br>这时$ -h1 \leq u \leq h1， -h2 \leq v \leq h2，-h3 \leq w \leq h3  $然后对u,v,w进行三重积分，不过这里仍然有和第三题相同的疑问，$dxdydz$与$dudvdw$之间的比例或者系数关系是什么，只有知道了这个关系我们才能从一种积分变成对另一种变量的积分，同样这里也只给出结果，$dudvdw&#x3D;|dej(a_{ij})| dxdydz$，之后积分就可以了。</li>
 </ul>
 <hr>
 <h3 id="题目四"><a href="#题目四" class="headerlink" title="题目四"></a>题目四</h3><h4 id="oint-L-frac-ydx-xdy-2x-2-y-2-，其中L-x-4-y-4-x3D-16-，取逆时针"><a href="#oint-L-frac-ydx-xdy-2x-2-y-2-，其中L-x-4-y-4-x3D-16-，取逆时针" class="headerlink" title="$\oint_L \frac{ydx-xdy}{2x^2+y^2}$，其中L:$x^4+y^4&#x3D;16$，取逆时针"></a>$\oint_L \frac{ydx-xdy}{2x^2+y^2}$，其中L:$x^4+y^4&#x3D;16$，取逆时针</h4><ul>
@@ -316,7 +314,7 @@
 <li>：<br>这到数列题笔者考试时，第一问是分类讨论做的，所以第二问就空着了…..不过这不是重要的事情，重要的事情是这个通项可以求的，把通项求出来这道题也就结束了。不过读者在大学学高数时极少遇到数列求通项的问题，只在高中的时候遇到过，可能是因为比赛要求要高一点吧。这里给出一点思路，两边取倒数。这里只给出一个结果 $ \frac{1}{a_n}&#x3D;n+\frac{1}{a_1}$。具体请见开头的两个网站。</li>
 </ul>
 <hr>
-<h3 id="题目九"><a href="#题目九" class="headerlink" title="题目九"></a>题目九</h3><p>$$ f(x)在[-1,1]上三阶可导，f(-1)&#x3D;0,f(1)&#x3D;1,f’(0)&#x3D;0,求证：存在一点 \zeta \in (-1,1)，使得|f’’’(\zeta)|\geq 3$$ </p>
+<h3 id="题目九"><a href="#题目九" class="headerlink" title="题目九"></a>题目九</h3><p>$ f(x)在[-1,1]上三阶可导，f(-1)&#x3D;0,f(1)&#x3D;1,f’(0)&#x3D;0,求证：存在一点 \zeta \in (-1,1)，使得|f’’’(\zeta)|\geq 3$</p>
 <ul>
 <li>：<br>这是压轴题，上面两个网站的解析都是用构造函数的方法，不过这个方法对于我们普通人来说写出来难度很大，笔者还是推荐用泰勒公式展开成三阶函数，代入-1,1两个值，然后两式做差或和，应该可以得出结果。</li>
 </ul>
