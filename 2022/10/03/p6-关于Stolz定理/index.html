@@ -16,35 +16,26 @@
   <meta name="author" content="YaoGuangMing">
   <meta name="keywords" content="">
   
-    <meta name="description" content="实验一   （题目一）">
+    <meta name="description" content="求数列极限的Stolz定理">
 <meta property="og:type" content="article">
-<meta property="og:title" content="操作系统实验一(题目1)">
-<meta property="og:url" content="http://example.com/2022/10/02/p5-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%9E%E9%AA%8C%E4%B8%80-%E9%A2%98%E7%9B%AE1/index.html">
+<meta property="og:title" content="关于Stolz定理">
+<meta property="og:url" content="http://example.com/2022/10/03/p6-%E5%85%B3%E4%BA%8EStolz%E5%AE%9A%E7%90%86/index.html">
 <meta property="og:site_name" content="blog">
-<meta property="og:description" content="实验一   （题目一）">
+<meta property="og:description" content="求数列极限的Stolz定理">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/img/os/1.png">
-<meta property="og:image" content="http://example.com/img/os/2.png">
-<meta property="og:image" content="http://example.com/img/os/3.png">
-<meta property="og:image" content="http://example.com/img/os/4.png">
-<meta property="og:image" content="http://example.com/img/os/5.png">
-<meta property="og:image" content="http://example.com/img/os/6.png">
-<meta property="og:image" content="http://example.com/img/os/10.png">
-<meta property="og:image" content="http://example.com/img/os/7.png">
-<meta property="og:image" content="http://example.com/img/os/8.png">
-<meta property="og:image" content="http://example.com/img/os/9.png">
-<meta property="og:image" content="http://example.com/img/os/11.png">
-<meta property="article:published_time" content="2022-10-02T13:30:40.000Z">
-<meta property="article:modified_time" content="2022-10-02T14:57:12.994Z">
+<meta property="og:image" content="http://example.com/img/math/1.png">
+<meta property="og:image" content="http://example.com/img/math/2.png">
+<meta property="article:published_time" content="2022-10-03T03:00:23.000Z">
+<meta property="article:modified_time" content="2022-10-03T03:05:17.885Z">
 <meta property="article:author" content="YaoGuangMing">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/img/os/1.png">
+<meta name="twitter:image" content="http://example.com/img/math/1.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>操作系统实验一(题目1) - blog</title>
+  <title>关于Stolz定理 - blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -212,7 +203,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="操作系统实验一(题目1)"></span>
+            <span id="subtitle" data-typed-text="关于Stolz定理"></span>
           
         </div>
 
@@ -228,8 +219,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-10-02 21:30" pubdate>
-          2022年10月2日 晚上
+        <time datetime="2022-10-03 11:00" pubdate>
+          2022年10月3日 上午
         </time>
       </span>
     
@@ -240,7 +231,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          371 字
+          48 字
         
       </span>
     
@@ -251,7 +242,7 @@
         
         
         
-          4 分钟
+          1 分钟
         
       </span>
     
@@ -297,27 +288,14 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">操作系统实验一(题目1)</h1>
+            <h1 style="display: none">关于Stolz定理</h1>
             
             
               <div class="markdown-body">
                 
-                <blockquote>
-<p>实验一   （题目一）</p>
+                <p>求数列极限的Stolz定理</p>
 <span id="more"></span>
-</blockquote>
-<hr>
-<h3 id="简要"><a href="#简要" class="headerlink" title="简要"></a>简要</h3><ul>
-<li>笔者的虚拟机装的是Ubuntu</li>
-<li>安装vim,make,gcc</li>
-<li>执行insmod命令时要用管理权限，sudo insmod mod</li>
-<li>task_struct的state这个变量不知道是怎么回事，我的编译会出错，错误内容是没有这个模块成员？？？(哪个坏家伙把state换了)， 改成_ _state就可以了</li>
-<li>以下附上本实验要用的task_struct成员，其中comm指进程名称,mm用于区分是否是内核线程<br><img src="/img/os/1.png" srcset="/img/loading.gif" lazyload> <img src="/img/os/2.png" srcset="/img/loading.gif" lazyload> <img src="/img/os/3.png" srcset="/img/loading.gif" lazyload> <img src="/img/os/4.png" srcset="/img/loading.gif" lazyload> <img src="/img/os/5.png" srcset="/img/loading.gif" lazyload> <img src="/img/os/6.png" srcset="/img/loading.gif" lazyload></li>
-</ul>
-<hr>
-<h3 id="模块一"><a href="#模块一" class="headerlink" title="模块一"></a>模块一</h3><p>按照书上说明做即可<br><img src="/img/os/10.png" srcset="/img/loading.gif" lazyload><br><img src="/img/os/7.png" srcset="/img/loading.gif" lazyload></p>
-<hr>
-<h3 id="模块二"><a href="#模块二" class="headerlink" title="模块二"></a>模块二</h3><p><strong>这里重点提示一下下</strong>，父节点的children节点和子节点的sibling节点，他们的关系是父节点的children节点与子节点的sibling节点构成了一个循环链表，所以求兄弟节点的if语句就是去掉children这个头节点，不然会有乱码<br><img src="/img/os/8.png" srcset="/img/loading.gif" lazyload><br><img src="/img/os/9.png" srcset="/img/loading.gif" lazyload><br><img src="/img/os/11.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/img/math/1.png" srcset="/img/loading.gif" lazyload><br><img src="/img/math/2.png" srcset="/img/loading.gif" lazyload></p>
 <p class="note note-success">author: YaoGuangMing   2022-HDU </p>
 <p class="note note-warning">转载请标明出处！ </p>
                 
@@ -326,6 +304,27 @@
             <hr/>
             <div>
               <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" class="category-chain-item">高等数学</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
   
   
 </div>
@@ -338,18 +337,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/10/03/p6-%E5%85%B3%E4%BA%8EStolz%E5%AE%9A%E7%90%86/" title="关于Stolz定理">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">关于Stolz定理</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/09/29/p4-%E5%85%B3%E4%BA%8E%E6%95%B0%E5%88%97%E6%B1%82%E9%80%9A%E9%A1%B9%E6%96%B9%E6%B3%95/" title="关于数列求通项方法">
-                        <span class="hidden-mobile">关于数列求通项方法</span>
+                      <a href="/2022/10/02/p5-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%9E%E9%AA%8C%E4%B8%80-%E9%A2%98%E7%9B%AE1/" title="操作系统实验一(题目1)">
+                        <span class="hidden-mobile">操作系统实验一(题目1)</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
