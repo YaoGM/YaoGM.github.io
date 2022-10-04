@@ -16,26 +16,48 @@
   <meta name="author" content="YaoGuangMing">
   <meta name="keywords" content="">
   
-    <meta name="description" content="求数列极限的Stolz定理">
+    <meta name="description" content="概要  题1一道巧妙求反函数的题  题2  题3  题4  题5这个三角换元我…. 真的没话说  题6这个零式，运用的很巧  题7两次stolz，有点明白为啥说是数列的中的洛必达了…  题8这个放缩的函数找的有亿点点好哇  题9  题10  题11这个解答的分析思路很好  author: YaoGuangMing   Last_Updata: 2022&#x2F;10&#x2F;4   2022-HDU   转载请">
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于Stolz定理">
-<meta property="og:url" content="http://example.com/2022/10/03/p6-%E5%85%B3%E4%BA%8EStolz%E5%AE%9A%E7%90%86/index.html">
+<meta property="og:title" content="函数极限连续篇">
+<meta property="og:url" content="http://example.com/2022/10/04/p7-%E9%A2%98%E9%9B%86%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E8%BF%9E%E7%BB%AD/index.html">
 <meta property="og:site_name" content="blog">
-<meta property="og:description" content="求数列极限的Stolz定理">
+<meta property="og:description" content="概要  题1一道巧妙求反函数的题  题2  题3  题4  题5这个三角换元我…. 真的没话说  题6这个零式，运用的很巧  题7两次stolz，有点明白为啥说是数列的中的洛必达了…  题8这个放缩的函数找的有亿点点好哇  题9  题10  题11这个解答的分析思路很好  author: YaoGuangMing   Last_Updata: 2022&#x2F;10&#x2F;4   2022-HDU   转载请">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/img/math/1.png">
-<meta property="og:image" content="http://example.com/img/math/2.png">
-<meta property="article:published_time" content="2022-10-03T03:00:23.000Z">
-<meta property="article:modified_time" content="2022-10-03T03:05:17.885Z">
+<meta property="og:image" content="http://example.com/img/math/mc1.png">
+<meta property="og:image" content="http://example.com/img/math/3.png">
+<meta property="og:image" content="http://example.com/img/math/3_1.png">
+<meta property="og:image" content="http://example.com/img/math/4.png">
+<meta property="og:image" content="http://example.com/img/math/4_1.png">
+<meta property="og:image" content="http://example.com/img/math/5.png">
+<meta property="og:image" content="http://example.com/img/math/5_1.png">
+<meta property="og:image" content="http://example.com/img/math/6.png">
+<meta property="og:image" content="http://example.com/img/math/6_1.png">
+<meta property="og:image" content="http://example.com/img/math/7.png">
+<meta property="og:image" content="http://example.com/img/math/7_1.png">
+<meta property="og:image" content="http://example.com/img/math/8.png">
+<meta property="og:image" content="http://example.com/img/math/8_1.png">
+<meta property="og:image" content="http://example.com/img/math/9.png">
+<meta property="og:image" content="http://example.com/img/math/9_1.png">
+<meta property="og:image" content="http://example.com/img/math/10.png">
+<meta property="og:image" content="http://example.com/img/math/10_1.png">
+<meta property="og:image" content="http://example.com/img/math/11.png">
+<meta property="og:image" content="http://example.com/img/math/11_1.png">
+<meta property="og:image" content="http://example.com/img/math/12.png">
+<meta property="og:image" content="http://example.com/img/math/12_1.png">
+<meta property="og:image" content="http://example.com/img/math/13.png">
+<meta property="og:image" content="http://example.com/img/math/13_1.png">
+<meta property="og:image" content="http://example.com/img/math/13_2.png">
+<meta property="article:published_time" content="2022-10-04T06:38:44.000Z">
+<meta property="article:modified_time" content="2022-10-04T07:23:02.472Z">
 <meta property="article:author" content="YaoGuangMing">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/img/math/1.png">
+<meta name="twitter:image" content="http://example.com/img/math/mc1.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>关于Stolz定理 - blog</title>
+  <title>函数极限连续篇 - blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -203,7 +225,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="关于Stolz定理"></span>
+            <span id="subtitle" data-typed-text="函数极限连续篇"></span>
           
         </div>
 
@@ -219,8 +241,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-10-03 11:00" pubdate>
-          2022年10月3日 上午
+        <time datetime="2022-10-04 14:38" pubdate>
+          2022年10月4日 下午
         </time>
       </span>
     
@@ -231,7 +253,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          48 字
+          168 字
         
       </span>
     
@@ -242,7 +264,7 @@
         
         
         
-          1 分钟
+          2 分钟
         
       </span>
     
@@ -288,15 +310,37 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">关于Stolz定理</h1>
+            <h1 style="display: none">函数极限连续篇</h1>
             
             
               <div class="markdown-body">
                 
-                <p>求数列极限的Stolz定理</p>
-<span id="more"></span>
-<p><img src="/img/math/1.png" srcset="/img/loading.gif" lazyload><br><img src="/img/math/2.png" srcset="/img/loading.gif" lazyload></p>
-<p class="note note-success">author: YaoGuangMing   2022-HDU </p>
+                <span id="more"></span>
+<h3 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h3><p><img src="/img/math/mc1.png" srcset="/img/loading.gif" lazyload></p>
+<hr>
+<h3 id="题1"><a href="#题1" class="headerlink" title="题1"></a>题1</h3><p>一道巧妙求反函数的题<br><img src="/img/math/3.png" srcset="/img/loading.gif" lazyload><br><img src="/img/math/3_1.png" srcset="/img/loading.gif" lazyload></p>
+<hr>
+<h3 id="题2"><a href="#题2" class="headerlink" title="题2"></a>题2</h3><p><img src="/img/math/4.png" srcset="/img/loading.gif" lazyload><br><img src="/img/math/4_1.png" srcset="/img/loading.gif" lazyload></p>
+<hr>
+<h3 id="题3"><a href="#题3" class="headerlink" title="题3"></a>题3</h3><p><img src="/img/math/5.png" srcset="/img/loading.gif" lazyload><br><img src="/img/math/5_1.png" srcset="/img/loading.gif" lazyload></p>
+<hr>
+<h3 id="题4"><a href="#题4" class="headerlink" title="题4"></a>题4</h3><p><img src="/img/math/6.png" srcset="/img/loading.gif" lazyload><br><img src="/img/math/6_1.png" srcset="/img/loading.gif" lazyload></p>
+<hr>
+<h3 id="题5"><a href="#题5" class="headerlink" title="题5"></a>题5</h3><p>这个三角换元我…. 真的没话说<br><img src="/img/math/7.png" srcset="/img/loading.gif" lazyload><br><img src="/img/math/7_1.png" srcset="/img/loading.gif" lazyload></p>
+<hr>
+<h3 id="题6"><a href="#题6" class="headerlink" title="题6"></a>题6</h3><p>这个零式，运用的很巧<br><img src="/img/math/8.png" srcset="/img/loading.gif" lazyload><br><img src="/img/math/8_1.png" srcset="/img/loading.gif" lazyload></p>
+<hr>
+<h3 id="题7"><a href="#题7" class="headerlink" title="题7"></a>题7</h3><p>两次stolz，有点明白为啥说是数列的中的洛必达了…<br><img src="/img/math/9.png" srcset="/img/loading.gif" lazyload><br><img src="/img/math/9_1.png" srcset="/img/loading.gif" lazyload></p>
+<hr>
+<h3 id="题8"><a href="#题8" class="headerlink" title="题8"></a>题8</h3><p>这个放缩的函数找的有亿点点好哇<br><img src="/img/math/10.png" srcset="/img/loading.gif" lazyload><br><img src="/img/math/10_1.png" srcset="/img/loading.gif" lazyload></p>
+<hr>
+<h3 id="题9"><a href="#题9" class="headerlink" title="题9"></a>题9</h3><p><img src="/img/math/11.png" srcset="/img/loading.gif" lazyload><br><img src="/img/math/11_1.png" srcset="/img/loading.gif" lazyload></p>
+<hr>
+<h3 id="题10"><a href="#题10" class="headerlink" title="题10"></a>题10</h3><p><img src="/img/math/12.png" srcset="/img/loading.gif" lazyload><br><img src="/img/math/12_1.png" srcset="/img/loading.gif" lazyload></p>
+<hr>
+<h3 id="题11"><a href="#题11" class="headerlink" title="题11"></a>题11</h3><p>这个解答的分析思路很好<br><img src="/img/math/13.png" srcset="/img/loading.gif" lazyload><br><img src="/img/math/13_1.png" srcset="/img/loading.gif" lazyload><br><img src="/img/math/13_2.png" srcset="/img/loading.gif" lazyload></p>
+<hr>
+<p class="note note-success">author: YaoGuangMing   Last_Updata: 2022/10/4   2022-HDU  </p>
 <p class="note note-warning">转载请标明出处！ </p>
                 
               </div>
@@ -315,7 +359,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" class="category-chain-item">高等数学</a>
+  <a href="/categories/%E9%A2%98%E9%9B%86-%E9%AB%98%E6%95%B0/" class="category-chain-item">题集(高数)</a>
   
   
 
@@ -337,9 +381,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/10/04/p7-%E9%A2%98%E9%9B%86%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E8%BF%9E%E7%BB%AD/" title="函数极限连续篇">
+                      <a href="/2022/10/04/p8-%E9%A2%98%E9%9B%86%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E7%AF%87/" title="一元函数微分篇">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">函数极限连续篇</span>
+                        <span class="hidden-mobile">一元函数微分篇</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -347,8 +391,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/10/02/p5-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%9E%E9%AA%8C%E4%B8%80-%E9%A2%98%E7%9B%AE1/" title="操作系统实验一(题目1)">
-                        <span class="hidden-mobile">操作系统实验一(题目1)</span>
+                      <a href="/2022/10/03/p6-%E5%85%B3%E4%BA%8EStolz%E5%AE%9A%E7%90%86/" title="关于Stolz定理">
+                        <span class="hidden-mobile">关于Stolz定理</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
