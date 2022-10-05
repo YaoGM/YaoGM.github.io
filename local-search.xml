@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>关于分式除法和有理式分解</title>
+    <link href="/2022/10/05/p15-%E5%85%B3%E4%BA%8E%E5%88%86%E5%BC%8F%E9%99%A4%E6%B3%95%E5%92%8C%E6%9C%89%E7%90%86%E5%BC%8F%E5%88%86%E8%A7%A3/"/>
+    <url>/2022/10/05/p15-%E5%85%B3%E4%BA%8E%E5%88%86%E5%BC%8F%E9%99%A4%E6%B3%95%E5%92%8C%E6%9C%89%E7%90%86%E5%BC%8F%E5%88%86%E8%A7%A3/</url>
+    
+    <content type="html"><![CDATA[<blockquote><p>多项式带余除法和分式分解</p><span id="more"></span><p>本篇主要可以用在不定积分的分式问题和某些数列问题上</p></blockquote><h3 id="多项式带余除法"><a href="#多项式带余除法" class="headerlink" title="多项式带余除法"></a>多项式带余除法</h3><p>若f(x)的阶数高于g(x)，即 $&#x2F;frac{f(x)}{g(x)}$ 是一个假分式，可以用带余除法进行化简成<br>$$<br>f(x)&#x3D;q(x) + \frac{r(x)}{g(x)}<br>$$<br>这个给出一个例子<br><img src="/img/%E5%B8%A6%E4%BD%99%E9%99%A4%E6%B3%95.png"></p><hr><h3 id="真分式因式分解"><a href="#真分式因式分解" class="headerlink" title="真分式因式分解"></a>真分式因式分解</h3><p><img src="/img/%E7%9C%9F%E5%88%86%E5%BC%8F%E5%88%86%E8%A7%A31.png"><br><img src="/img/%E7%9C%9F%E5%88%86%E5%BC%8F%E5%88%86%E8%A7%A32.png"><br><img src="/img/%E7%9C%9F%E5%88%86%E5%BC%8F%E5%88%86%E8%A7%A33.png"><br><img src="/img/%E7%9C%9F%E5%88%86%E5%BC%8F%E5%88%86%E8%A7%A34.png"></p><p class="note note-success">author: YaoGuangMing   2022-HDU </p><p class="note note-warning">转载请标明出处！ </p>]]></content>
+    
+    
+    <categories>
+      
+      <category>高等数学</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>无穷级数篇</title>
     <link href="/2022/10/04/p14-%E9%A2%98%E9%9B%86%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0%E7%AF%87/"/>
     <url>/2022/10/04/p14-%E9%A2%98%E9%9B%86%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0%E7%AF%87/</url>
@@ -122,7 +141,7 @@
     <link href="/2022/10/04/p8-%E9%A2%98%E9%9B%86%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E7%AF%87/"/>
     <url>/2022/10/04/p8-%E9%A2%98%E9%9B%86%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E7%AF%87/</url>
     
-    <content type="html"><![CDATA[<blockquote><p>一元函数微分篇</p></blockquote><span id="more"></span><h3 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h3><p><img src="/img/math/mc2.png"></p><hr><p class="note note-success">author: YaoGuangMing   2022-HDU </p><p class="note note-warning">转载请标明出处！ </p>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>一元函数微分篇</p><span id="more"></span></blockquote><h3 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h3><p><img src="/img/math/mc2.png"></p><hr><h3 id="题1"><a href="#题1" class="headerlink" title="题1"></a>题1</h3><p>主要是那段评注，给出了构造函数的方法，这是十分重要的<br><img src="/img/math/14.png"></p><hr><h3 id="题2"><a href="#题2" class="headerlink" title="题2"></a>题2</h3><p><img src="/img/math/15.png"></p><p class="note note-success">author: YaoGuangMing   Last_Update: 2022/10/5   2022-HDU </p><p class="note note-warning">转载请标明出处！ </p>]]></content>
     
     
     <categories>
