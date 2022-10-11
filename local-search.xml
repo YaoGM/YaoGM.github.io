@@ -4,7 +4,7 @@
   
   
   <entry>
-    <title>p16_关于不定积分和定积分计算的小技巧</title>
+    <title>关于不定积分和定积分计算的小技巧</title>
     <link href="/2022/10/07/p16-%E5%85%B3%E4%BA%8E%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86%E5%92%8C%E5%AE%9A%E7%A7%AF%E5%88%86%E8%AE%A1%E7%AE%97%E7%9A%84%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
     <url>/2022/10/07/p16-%E5%85%B3%E4%BA%8E%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86%E5%92%8C%E5%AE%9A%E7%A7%AF%E5%88%86%E8%AE%A1%E7%AE%97%E7%9A%84%E5%B0%8F%E6%8A%80%E5%B7%A7/</url>
     
@@ -103,7 +103,7 @@
     <link href="/2022/10/04/p11-%E9%A2%98%E9%9B%86%E5%A4%9A%E5%85%83%E6%95%B0%E9%87%8F%E5%80%BC%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E7%AF%87/"/>
     <url>/2022/10/04/p11-%E9%A2%98%E9%9B%86%E5%A4%9A%E5%85%83%E6%95%B0%E9%87%8F%E5%80%BC%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E7%AF%87/</url>
     
-    <content type="html"><![CDATA[<blockquote><p>多元数量值函数积分篇</p><span id="more"></span></blockquote><h3 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h3><p><img src="/img/math/mc5.png"></p><hr><p class="note note-info">  更新于 ...</p><p class="note note-success">author: YaoGuangMing   2022-HDU </p><p class="note note-warning">转载请标明出处！ </p>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>多元数量值函数积分篇</p><span id="more"></span></blockquote><h3 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h3><p><img src="/img/math/mc5.png"></p><hr><h3 id="1"><a href="#1" class="headerlink" title="1"></a>1</h3><p><img src="/img/math/21.png"><br><img src="/img/math/21_1.png"></p><p class="note note-info">  更新于2022/10/11</p><p class="note note-success">author: YaoGuangMing   2022-HDU </p><p class="note note-warning">转载请标明出处！ </p>]]></content>
     
     
     <categories>
@@ -141,7 +141,7 @@
     <link href="/2022/10/04/p9-%E9%A2%98%E9%9B%86%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E7%AF%87/"/>
     <url>/2022/10/04/p9-%E9%A2%98%E9%9B%86%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E7%AF%87/</url>
     
-    <content type="html"><![CDATA[<blockquote><p>一元函数积分篇</p><span id="more"></span></blockquote><h3 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h3><p><img src="/img/math/mc3.png"></p><hr><p class="note note-info">  更新于 ...</p><p class="note note-success">author: YaoGuangMing   2022-HDU </p><p class="note note-warning">转载请标明出处！ </p>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>一元函数积分篇</p><span id="more"></span></blockquote><h3 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h3><p><img src="/img/math/mc3.png"></p><hr><h3 id="1"><a href="#1" class="headerlink" title="1"></a>1</h3><p><img src="/img/math/19.png"><br><img src="/img/math/19_1.png"><br><img src="/img/math/19_2.png"></p><hr><h3 id="2"><a href="#2" class="headerlink" title="2"></a>2</h3><p><img src="/img/math/20.png"><br><img src="/img/math/20_1.png"></p><p class="note note-info">  更新于 2022/10/11</p><p class="note note-success">author: YaoGuangMing   2022-HDU </p><p class="note note-warning">转载请标明出处！ </p>]]></content>
     
     
     <categories>
