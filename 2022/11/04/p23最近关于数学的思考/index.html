@@ -16,15 +16,15 @@
   <meta name="author" content="YaoGuangMing">
   <meta name="keywords" content="">
   
-    <meta name="description" content="课程成绩大一上  课程名称 成绩   程序设计基础  92   计算机科学导论  94   线性代数 95   高等数学A1  98   大学英语精读1B  83   大学英语听说1B  67   大学生心理健康教育  82   思想道德修养与法律基础	  85   形势与政策1  优秀   体育1  67     大一下  课程名称  成绩   离散数学 90    工程伦理  80">
-<meta property="og:type" content="website">
-<meta property="og:title" content="yHDU">
-<meta property="og:url" content="http://example.com/yHDU/index.html">
+    <meta name="description" content="函数端点值题目中抽象函数给出的特定的端点值，是构造函数或者进行放缩的突破点也是思考点，特别要注意0，1的特殊性  柯西积分不等式若函数f,g连续，则有$$[\int_a^b f(x)g(x) dx]^2 \leq \int_a^b f^2 (x)dx \int_a^b g^2 (x)dx$$这个不等式在比赛中也比较重要，这里给出一道经典的例题相对综合。设 f’(x) 在定义域R内连续，f(0)&amp;#">
+<meta property="og:type" content="article">
+<meta property="og:title" content="最近关于数学的思考">
+<meta property="og:url" content="http://example.com/2022/11/04/p23%E6%9C%80%E8%BF%91%E5%85%B3%E4%BA%8E%E6%95%B0%E5%AD%A6%E7%9A%84%E6%80%9D%E8%80%83/index.html">
 <meta property="og:site_name" content="blog">
-<meta property="og:description" content="课程成绩大一上  课程名称 成绩   程序设计基础  92   计算机科学导论  94   线性代数 95   高等数学A1  98   大学英语精读1B  83   大学英语听说1B  67   大学生心理健康教育  82   思想道德修养与法律基础	  85   形势与政策1  优秀   体育1  67     大一下  课程名称  成绩   离散数学 90    工程伦理  80">
+<meta property="og:description" content="函数端点值题目中抽象函数给出的特定的端点值，是构造函数或者进行放缩的突破点也是思考点，特别要注意0，1的特殊性  柯西积分不等式若函数f,g连续，则有$$[\int_a^b f(x)g(x) dx]^2 \leq \int_a^b f^2 (x)dx \int_a^b g^2 (x)dx$$这个不等式在比赛中也比较重要，这里给出一道经典的例题相对综合。设 f’(x) 在定义域R内连续，f(0)&amp;#">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-11-03T02:50:28.000Z">
-<meta property="article:modified_time" content="2022-11-04T11:34:32.423Z">
+<meta property="article:published_time" content="2022-11-04T11:37:24.000Z">
+<meta property="article:modified_time" content="2022-11-04T13:07:57.618Z">
 <meta property="article:author" content="YaoGuangMing">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -32,7 +32,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>yHDU - blog</title>
+  <title>最近关于数学的思考 - blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -206,15 +206,68 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/star.jpg') no-repeat center center; background-size: cover;">
+     style="background: url('/img/black.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="准备数竞ing"></span>
+            <span id="subtitle" data-typed-text="最近关于数学的思考"></span>
           
         </div>
+
+        
+          
+  <div class="mt-3">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        YaoGuangMing
+      </span>
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2022-11-04 19:37" pubdate>
+          2022年11月4日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          9 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="busuanzi_container_page_pv" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="busuanzi_value_page_pv"></span> 次
+        </span>
+        
+      
+    
+  </div>
+
 
         
       </div>
@@ -230,269 +283,147 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">最近关于数学的思考</h1>
+            
+            
+              <div class="markdown-body">
                 
-
-<article class="page-content">
-  <div class="markdown-body">
-
+                <h3 id="函数端点值"><a href="#函数端点值" class="headerlink" title="函数端点值"></a>函数端点值</h3><p>题目中抽象函数给出的特定的端点值，是构造函数或者进行放缩的突破点也是思考点，特别要注意0，1的特殊性</p>
 <hr>
-<h3 id="课程成绩"><a href="#课程成绩" class="headerlink" title="课程成绩"></a>课程成绩</h3><h4 id="大一上"><a href="#大一上" class="headerlink" title="大一上"></a>大一上</h4><table>
-<tr>
-<td>课程名称</td> <td>成绩</td>
-</tr>
-<tr>
-<td>程序设计基础</td> <td> 92</td>
-</tr>
-<tr>
-<td>计算机科学导论</td> <td> 94</td>
-</tr>
-<tr>
-<td>线性代数</td> <td>95</td>
-</tr>
-<tr>
-<td>高等数学A1</td> <td> 98</td>
-</tr>
-<tr>
-<td>大学英语精读1B</td> <td> 83</td>
-</tr>
-<tr>
-<td>大学英语听说1B</td> <td> 67</td>
-</tr>
-<tr>
-<td>大学生心理健康教育</td> <td> 82</td>
-</tr>
-<tr>
-<td>思想道德修养与法律基础	</td> <td> 85</td>
-</tr>
-<tr>
-<td>形势与政策1</td> <td> 优秀</td>
-</tr>
-<tr>
-<td>体育1</td> <td> 67</td>
-</tr>
-</table>
-
+<h3 id="柯西积分不等式"><a href="#柯西积分不等式" class="headerlink" title="柯西积分不等式"></a>柯西积分不等式</h3><p>若函数f,g连续，则有<br>$$<br>[\int_a^b f(x)g(x) dx]^2 \leq \int_a^b f^2 (x)dx \int_a^b g^2 (x)dx<br>$$<br>这个不等式在比赛中也比较重要，这里给出一道经典的例题相对综合。<br><strong>设</strong> f’(x) 在定义域R内连续，f(0)&#x3D;0，f(1)&#x3D;0，<strong>证明</strong>：<br>$$<br>[\int_0^1 f(x)dx]^2 \leq \frac{1}{12} \int_0^1 f’(x)^2 dx<br>$$<br><strong>（提示：注意端点值哦）</strong></p>
 <hr>
-<h4 id="大一下"><a href="#大一下" class="headerlink" title="大一下"></a>大一下</h4><table>
-<tr>
-<td>课程名称</td> <td> 成绩</td>
-</tr>
-<tr>
-<td>离散数学</td> <td>90 </td>
-</tr>
-<tr>
-<td>工程伦理</td> <td> 80</td>
-</tr>
-<tr>
-<td>面向对象程序设计C++</td> <td> 96</td>
-</tr>
-<tr>
-<td>高等数学A2</td> <td>94 </td>
-</tr>
-<tr>
-<td>大学物理1</td> <td> 87</td>
-</tr>
-<tr>
-<td>大学英语精读2B</td> <td>84 </td>
-</tr>
-<tr>
-<td>大学英语听说2B</td> <td>73 </td>
-</tr>
-<tr>
-<td>英语应用文写作</td> <td> 83</td>
-</tr>
-<tr>
-<td>大学军事</td> <td>73 </td>
-</tr>
-<tr>
-<td>中国近现代史纲要</td> <td>86 </td>
-</tr>
-<tr>
-<td>形势与政策2</td> <td> 78</td>
-</tr>
-<tr>
-<td>多媒体课件的设计与制作	</td> <td>89 </td>
-</tr>
-<tr>
-<td>认识实习</td> <td> 91</td>
-</tr>
-<tr>
-<td>软件开发实践1</td> <td>良好 </td>
-</tr>
-<tr>
-<td>程序设计课程实践</td> <td>96 </td>
-</tr>
-<tr>
-<td>体育-健康体能</td> <td>70 </td>
-</tr>
-</table>
-
+<h3 id="函数的单调性"><a href="#函数的单调性" class="headerlink" title="函数的单调性"></a>函数的单调性</h3><p>函数的单调性在不等式和积分放缩中有着很大的用处，先介绍一个不等式<strong>切比雪夫不等式</strong>：<br>若 f(x)，g(x)单调性相同，则有:<br>$$<br>\int_a^b f(x)dx \int_a^b g(x)dx \leq (b-a)\int_a^b f(x)g(x)dx<br>$$<br>证明过程主要利用两个函数的单调性构造不等式再两边积分，具体证明读者可自行查阅。<br>在求积分时可以通过单调性进行放缩，其中求调和级数的发散值，就体现了这一思想<br>$$<br>\ln(n+1) &lt; \sum_{n&#x3D;1}^\infty \frac{1}{n} &lt; \ln{n} +1<br>$$</p>
 <hr>
-<h4 id="大二上"><a href="#大二上" class="headerlink" title="大二上"></a>大二上</h4><table>
-<tr>
-<td>课程名称</td> <td> 成绩</td>
-</tr>
-<tr>
-<td>工程经济学</td><td>93</td>
-</tr>
-<tr>
-<td>数据结构(甲)</td><td>91</td>
-</tr>
-<tr>
-<td>数字电路设计</td><td>78</td>
-</tr>
-<tr>
-<td>大学物理2</td><td>81</td>
-</tr>
-<tr>
-<td>毛泽东思想和中国特色社会主义理论体系概论1</td><td>91</td>
-</tr>
-<tr>
-<td>形势与政策3</td><td>优秀</td>
-</tr>
-<tr>
-<td>大学生职业发展与就业指导1</td><td>96</td>
-</tr>
-<tr>
-<td>物联网工程导论</td><td>81</td>
-</tr>
-<tr>
-<td>数学建模</td><td>91</td>
-</tr>
-<tr>
-<td>中国刑法及典型案例</td><td>优秀</td>
-</tr>
-<tr>
-<td>国际动漫赏析</td><td>90</td>
-</tr>
-<tr>
-<td>王阳明心学</td><td>84</td>
-</tr>
-<tr>
-<td>数据结构课程实践</td><td>良好</td>
-</tr>
-<tr>
-<td>创新实践1</td><td>优秀</td>
-</tr>
-<tr>
-<td>数字电路课程设计</td><td>87</td>
-</tr>
-<tr>
-<td>大学物理实验B</td><td>86</td>
-</tr>
-<tr>
-<td>军训</td><td>良好</td>
-</tr>
-<tr>
-<td>体育-健康体能1</td><td>76</td>
-</tr>
-</table>
-
+<h3 id="函数的凸性与凹性"><a href="#函数的凸性与凹性" class="headerlink" title="函数的凸性与凹性"></a>函数的凸性与凹性</h3><p>体现函数凹凸性的地方是泰勒不等式，假设 f(x) 是个凸函数，即 f’’(x) &gt;&#x3D;0 则有泰勒展开：<br>$$<br>f(x)&#x3D;f(x_0)+f’(x_0)(x-x_0) + f’’(\xi)(x-x_0)^2<br>$$<br>于是有：<br>$$<br>f(x) \geq f(x_0)+f’(x_0)(x-x_0)<br>$$<br>不等式两边积分有：<br>$$<br>\int_a^b f(x)dx \geq \int_a^b f(x_0)dx+f’(x_0)\int_a^b (x-x_0)dx<br>$$<br>这里给出一个例子也是竞赛真题<br>证明：<br>$$<br>\int_0^1 \ln f(x)dx \leq \ln{\int_0^1 f(x)dx}<br>$$<br>比较典型的一个体现函数凹凸性的是<strong>琴生不等式</strong>，也可以用泰勒不等式证明</p>
 <hr>
-<h4 id="大二下"><a href="#大二下" class="headerlink" title="大二下"></a>大二下</h4><table>
-<tr>
-<td>课程名称</td><td>成绩</td>
-</tr>
-<tr>
-<td>电路与电子学</td><td>88</td>
-</tr>
-<tr>
-<td>编译原理</td><td>85</td>
-</tr>
-<tr>
-<td>计算机组成原理（甲）</td><td>91</td>
-</tr>
-<tr>
-<td>项目管理与案例分析</td><td>74</td>
-</tr>
-<tr>
-<td>概率论与数理统计</td><td>100🤭</td>
-</tr>
-<tr>
-<td>数学文化</td><td>91</td>
-</tr>
-<tr>
-<td>毛泽东思想和中国特色社会主义理论体系概论2</td><td>93</td>
-</tr>
-<tr>
-<td>形势与政策4</td><td>良好</td>
-</tr>
-<tr>
-<td>大学生职业发展与就业指导2</td><td>95</td>
-</tr>
-<tr>
-<td>Linux系统及应用</td><td>86</td>
-</tr>
-<tr>
-<td>数据库系统原理（甲）</td><td>85</td>
-</tr>
-<tr>
-<td>创业基础</td><td>86</td>
-</tr>
-<tr>
-<td>大学生与法</td><td>91</td>
-</tr>
-<tr>
-<td>数据库系统原理课程设计</td><td>优秀</td>
-</tr>
-<tr>
-<td>创新实践2</td><td>良好</td>
-</tr>
-<tr>
-<td>软件开发实践2</td><td>81</td>
-</tr>
-<tr>
-<td>计算机组成原理课程设计（甲）</td><td>88</td>
-</tr>
-</table>
+<h3 id="正交变换"><a href="#正交变换" class="headerlink" title="正交变换"></a>正交变换</h3><p>正交变换的雅可比行列式为1，且积分区域保持不变，用他进行换元可解决一些重积分的难题，一个比较好应用是<strong>possion公式</strong>：<br>$$<br>\iint_{x^2+y^2+z^2&#x3D;1} f(ax+by+cz)dS &#x3D;2\pi \int_{-1}^1 f(u\sqrt{a^2+b^2+c^2})du<br>$$</p>
+<p class="note note-success">author: YaoGuangMing   2022-HDU </p>
+<p class="note note-warning">转载请标明出处！ </p>
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
 
-<hr>
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" class="category-chain-item">高等数学</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
 </div>
 
-  
 
-</article>
+              
 
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-
-
-
-              </div>
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/10/30/p22%E7%AC%AC%E5%8D%81%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E9%A2%84%E8%B5%9B/" title="第十届全国大学生数学竞赛预赛">
+                        <span class="hidden-mobile">第十届全国大学生数学竞赛预赛</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
             </div>
-          </div>
+
+            
+          </article>
         </div>
       </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+  
+  
+
+
+
+
+
+
+
+
+
     
 
     
@@ -587,6 +518,46 @@
 
 
 
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
   <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
 
   <script>Fluid.plugins.codeWidget();</script>
@@ -640,7 +611,52 @@
 
   <script>Fluid.plugins.imageCaption();</script>
 
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+
+        Fluid.events.registerRefreshCallback(function() {
+          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
+            MathJax.startup.document.state(0);
+            MathJax.texReset();
+            MathJax.typeset();
+            MathJax.typesetPromise();
+          }
+        });
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
+
   <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
 
