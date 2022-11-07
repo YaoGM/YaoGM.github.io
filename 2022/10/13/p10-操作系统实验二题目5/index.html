@@ -16,34 +16,23 @@
   <meta name="author" content="YaoGuangMing">
   <meta name="keywords" content="">
   
-    <meta name="description" content="非数学专业类">
+    <meta name="description" content="实验二（题目五）">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第十三界全国大学生数学竞赛预赛">
-<meta property="og:url" content="http://example.com/2022/10/16/p18-%E7%AC%AC%E5%8D%81%E4%B8%89%E7%95%8C%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E9%A2%84%E8%B5%9B/index.html">
+<meta property="og:title" content="操作系统实验二（题目五）">
+<meta property="og:url" content="http://example.com/2022/10/13/p10-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%9E%E9%AA%8C%E4%BA%8C%E9%A2%98%E7%9B%AE5/index.html">
 <meta property="og:site_name" content="blog">
-<meta property="og:description" content="非数学专业类">
+<meta property="og:description" content="实验二（题目五）">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/img/mathcpt/cy13/1.jpg">
-<meta property="og:image" content="http://example.com/img/mathcpt/cy13/2.jpg">
-<meta property="og:image" content="http://example.com/img/mathcpt/cy13/3.jpg">
-<meta property="og:image" content="http://example.com/img/mathcpt/cy13/4.jpg">
-<meta property="og:image" content="http://example.com/img/mathcpt/cy13/5.jpg">
-<meta property="og:image" content="http://example.com/img/mathcpt/cy13/6.jpg">
-<meta property="og:image" content="http://example.com/img/mathcpt/cy13/7.jpg">
-<meta property="og:image" content="http://example.com/img/mathcpt/cy13/8.jpg">
-<meta property="og:image" content="http://example.com/img/mathcpt/cy13/9.jpg">
-<meta property="og:image" content="http://example.com/img/%E9%BD%90%E6%AC%A1%E5%87%BD%E6%95%B0.png">
-<meta property="article:published_time" content="2022-10-16T14:34:57.000Z">
-<meta property="article:modified_time" content="2022-10-17T13:43:18.451Z">
+<meta property="article:published_time" content="2022-10-13T13:06:55.000Z">
+<meta property="article:modified_time" content="2022-10-18T15:01:53.496Z">
 <meta property="article:author" content="YaoGuangMing">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/img/mathcpt/cy13/1.jpg">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>第十三界全国大学生数学竞赛预赛 - blog</title>
+  <title>操作系统实验二（题目五） - blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -223,7 +212,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="第十三界全国大学生数学竞赛预赛"></span>
+            <span id="subtitle" data-typed-text="操作系统实验二（题目五）"></span>
           
         </div>
 
@@ -239,8 +228,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-10-16 22:34" pubdate>
-          2022年10月16日 晚上
+        <time datetime="2022-10-13 21:06" pubdate>
+          2022年10月13日 晚上
         </time>
       </span>
     
@@ -251,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          365 字
+          1.5k 字
         
       </span>
     
@@ -262,7 +251,7 @@
         
         
         
-          4 分钟
+          13 分钟
         
       </span>
     
@@ -308,26 +297,31 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">第十三界全国大学生数学竞赛预赛</h1>
+            <h1 style="display: none">操作系统实验二（题目五）</h1>
             
             
               <div class="markdown-body">
                 
                 <blockquote>
-<p>非数学专业类</p>
+<p>实验二（题目五）</p>
 <span id="more"></span>
 </blockquote>
-<h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p><img src="/img/mathcpt/cy13/1.jpg" srcset="/img/loading.gif" lazyload><br><img src="/img/mathcpt/cy13/2.jpg" srcset="/img/loading.gif" lazyload></p>
+<h3 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h3><ul>
+<li>题目内容：改变主机名称为自定义字符串</li>
+<li>思路：<del>其实就是把原系统调用的sethostname搬过来</del></li>
+<li>平台：华为云ubuntu20.04操作系统</li>
+<li>注意：内核编译完成后，服务器重启之后一定要用VCN登录，在VCN上再reboot一下,会出现一个选择界面，选第二个就可以看到你编译的内核了，cloud重启登录内核是加不进去的</li>
+<li>命令：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs bash">wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.14.295.tar.xz<br>xz -d linux-4.14.295.tar.xz <br>tar -xvf linux-4.14.295.tar <br>vim <span class="hljs-built_in">arch</span>/x86/entry/syscalls/syscall_64.tbl	//添加调用号<br>vim include/linux/syscalls.h	//函数声明<br>vim kernel/sys.c	//函数实现<br>apt-get install libncurses5-dev<br>apt-get install libssl-dev<br>apt-get install flex<br>apt-get install bison<br>make mrproper<br>make menuconfig<br>make -j128<br>make -j128  modules<br>make modules_install<br>make install<br>reboot<br></code></pre></td></tr></table></figure>
+编译过程中好像有个关于debian….的错误，笔者是输入 scripts&#x2F;config –set-str SYSTEM_TRUSTED_KEYS “” 解决的 ，还有就是哪个bzimg的错误（编译的时候先把服务器配置改成128核的CPU，然后就很快乐）</li>
+</ul>
 <hr>
-<h3 id="解答"><a href="#解答" class="headerlink" title="解答"></a>解答</h3><p><img src="/img/mathcpt/cy13/3.jpg" srcset="/img/loading.gif" lazyload><br><img src="/img/mathcpt/cy13/4.jpg" srcset="/img/loading.gif" lazyload><br><img src="/img/mathcpt/cy13/5.jpg" srcset="/img/loading.gif" lazyload><br><img src="/img/mathcpt/cy13/6.jpg" srcset="/img/loading.gif" lazyload><br><img src="/img/mathcpt/cy13/7.jpg" srcset="/img/loading.gif" lazyload><br><img src="/img/mathcpt/cy13/8.jpg" srcset="/img/loading.gif" lazyload><br><img src="/img/mathcpt/cy13/9.jpg" srcset="/img/loading.gif" lazyload></p>
+<h3 id="调用函数代码"><a href="#调用函数代码" class="headerlink" title="调用函数代码"></a>调用函数代码</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-built_in">SYSCALL_DEFINE2</span>(ysethostname, <span class="hljs-type">char</span> __user*, name,<span class="hljs-type">int</span>, len)<br>&#123;<br>	<span class="hljs-type">int</span> errno;<br>	<span class="hljs-type">char</span> tmp[__NEW_UTS_LEN];<br><br>	<span class="hljs-keyword">if</span> (len &lt; <span class="hljs-number">0</span> || len &gt; __NEW_UTS_LEN)<br>		<span class="hljs-keyword">return</span> -EINVAL;<br>	errno = -EFAULT;<br>	<span class="hljs-keyword">if</span> (!<span class="hljs-built_in">copy_from_user</span>(tmp, name, len)) &#123;<br>		<span class="hljs-keyword">struct</span> <span class="hljs-title class_">new_utsname</span> *u;<br>		<span class="hljs-built_in">down_write</span>(&amp;uts_sem);<br>		u = <span class="hljs-built_in">utsname</span>();<br>		<span class="hljs-built_in">memcpy</span>(u-&gt;nodename, tmp, len);<br>		<span class="hljs-built_in">memset</span>(u-&gt;nodename + len, <span class="hljs-number">0</span>, <span class="hljs-built_in">sizeof</span>(u-&gt;nodename) - len);<br>		errno = <span class="hljs-number">0</span>;<br>		<span class="hljs-built_in">up_write</span>(&amp;uts_sem);<br>	&#125;<br>	<span class="hljs-keyword">return</span> errno;<br>&#125;<br></code></pre></td></tr></table></figure>
+
 <hr>
-<h3 id="tips"><a href="#tips" class="headerlink" title="tips"></a>tips</h3><p><img src="/img/%E9%BD%90%E6%AC%A1%E5%87%BD%E6%95%B0.png" srcset="/img/loading.gif" lazyload></p>
-<hr>
-<h3 id="my-feeling"><a href="#my-feeling" class="headerlink" title="my feeling"></a>my feeling</h3><p>第一大题除了第四小题以外都比较常规，没有那么难想和坑，第四小题我个人做时是比较懵的状态，可能我的立体几何学的一直不怎么好😅，大题方面我个人觉得还是挺难的，除了第二和六大题其他的都没有核心思路，第三大题的通解求法比较新颖，变量代换直接变成一阶线性微分方程，第四大题的核心是第一类曲面积分和第二类曲面积分的转换，这个一转二，我几乎没看过，更别说用了，不过开心的，又学到一手😏，第五大题这个泰勒直接人搞傻了，我到现在也没看懂😫，可恶。第六大题我称之为一的妙用。<br>竞赛的题目一直给我的感受都是充满了新鲜感和神秘感，它要求答题者有较高的观察力和一定的经验积累，以及对于高数的比较深层次理解和运用，总的来说题目出的很棒😀</p>
+<h3 id="测试调用C代码"><a href="#测试调用C代码" class="headerlink" title="测试调用C代码"></a>测试调用C代码</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;unistd.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;sys/syscall.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;string.h&gt;</span></span><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>		<span class="hljs-type">char</span> name[<span class="hljs-number">64</span>];<br>		<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;input name:&quot;</span>);<br>		<span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%s&quot;</span>,name);<br>		<span class="hljs-type">int</span> len=<span class="hljs-built_in">strlen</span>(name);<br>        <span class="hljs-built_in">syscall</span>(<span class="hljs-number">333</span>,name,len);<br>        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;success\n&quot;</span>);<br>        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
 <p class="note note-success">author: YaoGuangMing   2022-HDU </p>
 <p class="note note-warning">转载请标明出处！ </p>
-
-
                 
               </div>
             
@@ -345,7 +339,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" class="category-chain-item">高等数学</a>
+  <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="category-chain-item">操作系统</a>
   
   
 
@@ -367,9 +361,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/10/17/p19-%E7%AC%AC%E5%8D%81%E4%BA%8C%E7%95%8C%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E9%A2%84%E8%B5%9B/" title="第十二界全国大学生数学竞赛预赛">
+                      <a href="/2022/10/16/p11-%E7%AC%AC%E5%8D%81%E4%B8%89%E7%95%8C%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E9%A2%84%E8%B5%9B/" title="第十三界全国大学生数学竞赛预赛">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">第十二界全国大学生数学竞赛预赛</span>
+                        <span class="hidden-mobile">第十三界全国大学生数学竞赛预赛</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -377,8 +371,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/10/13/p17-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%9E%E9%AA%8C%E4%BA%8C%E9%A2%98%E7%9B%AE5/" title="操作系统实验二（题目五）">
-                        <span class="hidden-mobile">操作系统实验二（题目五）</span>
+                      <a href="/2022/10/07/p9-%E5%85%B3%E4%BA%8E%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86%E5%92%8C%E5%AE%9A%E7%A7%AF%E5%88%86%E8%AE%A1%E7%AE%97%E7%9A%84%E5%B0%8F%E6%8A%80%E5%B7%A7/" title="关于不定积分和定积分计算的小技巧">
+                        <span class="hidden-mobile">关于不定积分和定积分计算的小技巧</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

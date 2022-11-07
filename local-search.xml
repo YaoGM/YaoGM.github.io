@@ -5,8 +5,8 @@
   
   <entry>
     <title>最近关于数学的思考</title>
-    <link href="/2022/11/04/p23%E6%9C%80%E8%BF%91%E5%85%B3%E4%BA%8E%E6%95%B0%E5%AD%A6%E7%9A%84%E6%80%9D%E8%80%83/"/>
-    <url>/2022/11/04/p23%E6%9C%80%E8%BF%91%E5%85%B3%E4%BA%8E%E6%95%B0%E5%AD%A6%E7%9A%84%E6%80%9D%E8%80%83/</url>
+    <link href="/2022/11/04/p16%E6%9C%80%E8%BF%91%E5%85%B3%E4%BA%8E%E6%95%B0%E5%AD%A6%E7%9A%84%E6%80%9D%E8%80%83/"/>
+    <url>/2022/11/04/p16%E6%9C%80%E8%BF%91%E5%85%B3%E4%BA%8E%E6%95%B0%E5%AD%A6%E7%9A%84%E6%80%9D%E8%80%83/</url>
     
     <content type="html"><![CDATA[<p>一些小想法</p><span id="more"></span><h3 id="函数端点值"><a href="#函数端点值" class="headerlink" title="函数端点值"></a>函数端点值</h3><p>题目中抽象函数给出的特定的端点值，是构造函数或者进行放缩的突破点也是思考点，特别要注意0，1的特殊性</p><hr><h3 id="柯西积分不等式"><a href="#柯西积分不等式" class="headerlink" title="柯西积分不等式"></a>柯西积分不等式</h3><p>若函数f,g连续，则有<br>$$<br>[\int_a^b f(x)g(x) dx]^2 \leq \int_a^b f^2 (x)dx \int_a^b g^2 (x)dx<br>$$<br>这个不等式在比赛中也比较重要，这里给出一道经典的例题相对综合。<br><strong>设</strong> f’(x) 在定义域R内连续，f(0)&#x3D;0，f(1)&#x3D;0，<strong>证明</strong>：<br>$$<br>[\int_0^1 f(x)dx]^2 \leq \frac{1}{12} \int_0^1 f’(x)^2 dx<br>$$<br><strong>（提示：注意端点值哦）</strong></p><hr><h3 id="函数的单调性"><a href="#函数的单调性" class="headerlink" title="函数的单调性"></a>函数的单调性</h3><p>函数的单调性在不等式和积分放缩中有着很大的用处，先介绍一个不等式<strong>切比雪夫不等式</strong>：<br>若 f(x)，g(x)单调性相同，则有:<br>$$<br>\int_a^b f(x)dx \int_a^b g(x)dx \leq (b-a)\int_a^b f(x)g(x)dx<br>$$<br>证明过程主要利用两个函数的单调性构造不等式再两边积分，具体证明读者可自行查阅。<br>在求积分时可以通过单调性进行放缩，其中求调和级数的发散值，就体现了这一思想<br>$$<br>\ln(n+1) &lt; \sum_{n&#x3D;1}^\infty \frac{1}{n} &lt; \ln{n} +1<br>$$</p><hr><h3 id="函数的凸性与凹性"><a href="#函数的凸性与凹性" class="headerlink" title="函数的凸性与凹性"></a>函数的凸性与凹性</h3><p>体现函数凹凸性的地方是泰勒不等式，假设 f(x) 是个凸函数，即 f’’(x) &gt;&#x3D;0 则有泰勒展开：<br>$$<br>f(x)&#x3D;f(x_0)+f’(x_0)(x-x_0) + f’’(\xi)(x-x_0)^2<br>$$<br>于是有：<br>$$<br>f(x) \geq f(x_0)+f’(x_0)(x-x_0)<br>$$<br>不等式两边积分有：<br>$$<br>\int_a^b f(x)dx \geq \int_a^b f(x_0)dx+f’(x_0)\int_a^b (x-x_0)dx<br>$$<br>这里给出一个例子也是竞赛真题<br>证明：<br>$$<br>\int_0^1 \ln f(x)dx \leq \ln{\int_0^1 f(x)dx}<br>$$<br>比较典型的一个体现函数凹凸性的是<strong>琴生不等式</strong>，也可以用泰勒不等式证明</p><hr><h3 id="正交变换"><a href="#正交变换" class="headerlink" title="正交变换"></a>正交变换</h3><p>正交变换的雅可比行列式为1，且积分区域保持不变，用他进行换元可解决一些重积分的难题，一个比较好应用是<strong>possion公式</strong>：<br>$$<br>\iint_{x^2+y^2+z^2&#x3D;1} f(ax+by+cz)dS &#x3D;2\pi \int_{-1}^1 f(u\sqrt{a^2+b^2+c^2})du<br>$$</p><p class="note note-success">author: YaoGuangMing   2022-HDU </p><p class="note note-warning">转载请标明出处！ </p>]]></content>
     
@@ -24,8 +24,8 @@
   
   <entry>
     <title>第十届全国大学生数学竞赛预赛</title>
-    <link href="/2022/10/30/p22%E7%AC%AC%E5%8D%81%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E9%A2%84%E8%B5%9B/"/>
-    <url>/2022/10/30/p22%E7%AC%AC%E5%8D%81%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E9%A2%84%E8%B5%9B/</url>
+    <link href="/2022/10/30/p15%E7%AC%AC%E5%8D%81%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E9%A2%84%E8%B5%9B/"/>
+    <url>/2022/10/30/p15%E7%AC%AC%E5%8D%81%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E9%A2%84%E8%B5%9B/</url>
     
     <content type="html"><![CDATA[<blockquote><p>非数学专业类</p><span id="more"></span></blockquote><h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p><img src="/img/mathcpt/cy10/1.png"></p><hr><h3 id="解答"><a href="#解答" class="headerlink" title="解答"></a>解答</h3><p><img src="/img/mathcpt/cy10/2.jpg"><br><img src="/img/mathcpt/cy10/3.jpg"><br><img src="/img/mathcpt/cy10/4.jpg"><br><img src="/img/mathcpt/cy10/5.jpg"><br><img src="/img/mathcpt/cy10/6.jpg"><br><img src="/img/mathcpt/cy10/7.jpg"><br><img src="/img/mathcpt/cy10/8.jpg"><br><img src="/img/mathcpt/cy10/9.jpg"></p><h3 id="feel"><a href="#feel" class="headerlink" title="feel"></a>feel</h3><p>这套题填空出的比较常规，大题好几个都是竞赛书上原题，还是要认真看书，注意积累</p><p class="note note-success">author: YaoGuangMing   2022-HDU </p><p class="note note-warning">转载请标明出处！ </p>]]></content>
     
@@ -43,8 +43,8 @@
   
   <entry>
     <title>第十一界全国大学生数学竞赛预赛</title>
-    <link href="/2022/10/29/p21%E7%AC%AC%E5%8D%81%E4%B8%80%E7%95%8C%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E9%A2%84%E8%B5%9B/"/>
-    <url>/2022/10/29/p21%E7%AC%AC%E5%8D%81%E4%B8%80%E7%95%8C%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E9%A2%84%E8%B5%9B/</url>
+    <link href="/2022/10/29/p14%E7%AC%AC%E5%8D%81%E4%B8%80%E7%95%8C%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E9%A2%84%E8%B5%9B/"/>
+    <url>/2022/10/29/p14%E7%AC%AC%E5%8D%81%E4%B8%80%E7%95%8C%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E9%A2%84%E8%B5%9B/</url>
     
     <content type="html"><![CDATA[<blockquote><p>非数学专业类</p><span id="more"></span></blockquote><h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p><img src="/img/mathcpt/cy11/1.png"></p><hr><h3 id="解答"><a href="#解答" class="headerlink" title="解答"></a>解答</h3><p><img src="/img/mathcpt/cy11/2.jpg"><br><img src="/img/mathcpt/cy11/3.jpg"><br><img src="/img/mathcpt/cy11/4.jpg"><br><img src="/img/mathcpt/cy11/5.jpg"><br><img src="/img/mathcpt/cy11/6.jpg"><br><img src="/img/mathcpt/cy11/7.jpg"></p><hr><h3 id="feel"><a href="#feel" class="headerlink" title="feel"></a>feel</h3><p>这套题的难度算是很大的了，第四大题知识点比较偏，第五大题级数的证明也颇有难度</p><p class="note note-success">author: YaoGuangMing   2022-HDU </p><p class="note note-warning">转载请标明出处！ </p>]]></content>
     
@@ -62,8 +62,8 @@
   
   <entry>
     <title>一些考前资料</title>
-    <link href="/2022/10/22/p20-%E4%B8%80%E4%BA%9B%E8%80%83%E5%89%8D%E8%B5%84%E6%96%99/"/>
-    <url>/2022/10/22/p20-%E4%B8%80%E4%BA%9B%E8%80%83%E5%89%8D%E8%B5%84%E6%96%99/</url>
+    <link href="/2022/10/22/p13-%E4%B8%80%E4%BA%9B%E8%80%83%E5%89%8D%E8%B5%84%E6%96%99/"/>
+    <url>/2022/10/22/p13-%E4%B8%80%E4%BA%9B%E8%80%83%E5%89%8D%E8%B5%84%E6%96%99/</url>
     
     <content type="html"><![CDATA[<blockquote><p>一些考前总结，你可能用得到</p><span id="more"></span></blockquote><h3 id="资料"><a href="#资料" class="headerlink" title="资料"></a>资料</h3><p><a href="https://github.com/YaoGM/YaoGM.github.io/raw/master/mathppt/%E7%AC%AC02%E8%AE%B2%20%E6%B5%85%E8%B0%88%E5%A6%82%E4%BD%95%E6%8E%A2%E7%B4%A2%E7%AB%9E%E8%B5%9B%E3%80%81%E8%80%83%E7%A0%94%E9%A2%98%E7%9A%84%E6%B1%82%E8%A7%A3%E6%80%9D%E8%B7%AF.pdf">第02讲 浅谈如何探索竞赛、考研题的求解思路.pdf</a><br><a href="https://github.com/YaoGM/YaoGM.github.io/raw/master/mathppt/%E7%AC%AC03%E8%AE%B2%20%E5%B8%B8%E7%94%A8%E6%95%B0%E5%88%97%E4%B8%8E%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E9%A2%98%E5%9E%8B%E5%8F%8A%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95.pdf">第03讲 常用数列与函数极限题型及计算方法.pdf</a><br><a href="https://github.com/YaoGM/YaoGM.github.io/raw/master/mathppt/%E7%AC%AC04%E8%AE%B2%20%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8.pdf">第04讲 一元函数的导数与微分及其应用.pdf</a><br><a href="https://github.com/YaoGM/YaoGM.github.io/raw/master/mathppt/%E7%AC%AC05%E8%AE%B2%20%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8.pdf">第05讲 一元函数积分学及其应用.pdf</a><br><a href="https://github.com/YaoGM/YaoGM.github.io/raw/master/mathppt/%E7%AC%AC06%E8%AE%B2%20%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E6%B3%95%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8.pdf">第06讲 多元函数微分法及其应用.pdf</a><br><a href="https://github.com/YaoGM/YaoGM.github.io/raw/master/mathppt/%E7%AC%AC07%E8%AE%B2%20%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8.pdf">第07讲 多元函数积分学及其应用.pdf</a><br><a href="https://github.com/YaoGM/YaoGM.github.io/raw/master/mathppt/%E7%AC%AC08%E8%AE%B2%20%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0.pdf">第08讲 无穷级数.pdf</a></p><p class="note note-success">author: YaoGuangMing   2022-HDU </p><p class="note note-warning">转载请标明出处！ </p>]]></content>
     
@@ -81,8 +81,8 @@
   
   <entry>
     <title>第十二界全国大学生数学竞赛预赛</title>
-    <link href="/2022/10/17/p19-%E7%AC%AC%E5%8D%81%E4%BA%8C%E7%95%8C%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E9%A2%84%E8%B5%9B/"/>
-    <url>/2022/10/17/p19-%E7%AC%AC%E5%8D%81%E4%BA%8C%E7%95%8C%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E9%A2%84%E8%B5%9B/</url>
+    <link href="/2022/10/17/p12-%E7%AC%AC%E5%8D%81%E4%BA%8C%E7%95%8C%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E9%A2%84%E8%B5%9B/"/>
+    <url>/2022/10/17/p12-%E7%AC%AC%E5%8D%81%E4%BA%8C%E7%95%8C%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E9%A2%84%E8%B5%9B/</url>
     
     <content type="html"><![CDATA[<blockquote><p>非数学专业类</p><span id="more"></span></blockquote><h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p><img src="/img/mathcpt/cy12/1.jpg"><br><img src="/img/mathcpt/cy12/2.jpg"></p><hr><h3 id="解答"><a href="#解答" class="headerlink" title="解答"></a>解答</h3><p><img src="/img/mathcpt/cy12/3.jpg"><br><img src="/img/mathcpt/cy12/4.jpg"><br><img src="/img/mathcpt/cy12/5.jpg"><br><img src="/img/mathcpt/cy12/6.jpg"><br><img src="/img/mathcpt/cy12/7.jpg"><br><img src="/img/mathcpt/cy12/8.jpg"><br><img src="/img/mathcpt/cy12/9.jpg"><br><img src="/img/mathcpt/cy12/10.jpg"><br><img src="/img/mathcpt/cy12/11.jpg"></p><hr><h3 id="my-feeling"><a href="#my-feeling" class="headerlink" title="my feeling"></a>my feeling</h3><p>第一大题的第四小题挺新颖的，第五小题抽象函数加填空，我直接是取特值代入，第二大题主要是通项的求解，多写几项就出来了，第六大题和第七大题应该是难度最高的两个题目了，两个题目证明都比较新颖，这个核心证明点我总是不好抓住，感觉要重视平时的积累。</p><p class="note note-success">author: YaoGuangMing   2022-HDU </p><p class="note note-warning">转载请标明出处！ </p>]]></content>
     
@@ -100,8 +100,8 @@
   
   <entry>
     <title>第十三界全国大学生数学竞赛预赛</title>
-    <link href="/2022/10/16/p18-%E7%AC%AC%E5%8D%81%E4%B8%89%E7%95%8C%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E9%A2%84%E8%B5%9B/"/>
-    <url>/2022/10/16/p18-%E7%AC%AC%E5%8D%81%E4%B8%89%E7%95%8C%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E9%A2%84%E8%B5%9B/</url>
+    <link href="/2022/10/16/p11-%E7%AC%AC%E5%8D%81%E4%B8%89%E7%95%8C%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E9%A2%84%E8%B5%9B/"/>
+    <url>/2022/10/16/p11-%E7%AC%AC%E5%8D%81%E4%B8%89%E7%95%8C%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E9%A2%84%E8%B5%9B/</url>
     
     <content type="html"><![CDATA[<blockquote><p>非数学专业类</p><span id="more"></span></blockquote><h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p><img src="/img/mathcpt/cy13/1.jpg"><br><img src="/img/mathcpt/cy13/2.jpg"></p><hr><h3 id="解答"><a href="#解答" class="headerlink" title="解答"></a>解答</h3><p><img src="/img/mathcpt/cy13/3.jpg"><br><img src="/img/mathcpt/cy13/4.jpg"><br><img src="/img/mathcpt/cy13/5.jpg"><br><img src="/img/mathcpt/cy13/6.jpg"><br><img src="/img/mathcpt/cy13/7.jpg"><br><img src="/img/mathcpt/cy13/8.jpg"><br><img src="/img/mathcpt/cy13/9.jpg"></p><hr><h3 id="tips"><a href="#tips" class="headerlink" title="tips"></a>tips</h3><p><img src="/img/%E9%BD%90%E6%AC%A1%E5%87%BD%E6%95%B0.png"></p><hr><h3 id="my-feeling"><a href="#my-feeling" class="headerlink" title="my feeling"></a>my feeling</h3><p>第一大题除了第四小题以外都比较常规，没有那么难想和坑，第四小题我个人做时是比较懵的状态，可能我的立体几何学的一直不怎么好😅，大题方面我个人觉得还是挺难的，除了第二和六大题其他的都没有核心思路，第三大题的通解求法比较新颖，变量代换直接变成一阶线性微分方程，第四大题的核心是第一类曲面积分和第二类曲面积分的转换，这个一转二，我几乎没看过，更别说用了，不过开心的，又学到一手😏，第五大题这个泰勒直接人搞傻了，我到现在也没看懂😫，可恶。第六大题我称之为一的妙用。<br>竞赛的题目一直给我的感受都是充满了新鲜感和神秘感，它要求答题者有较高的观察力和一定的经验积累，以及对于高数的比较深层次理解和运用，总的来说题目出的很棒😀</p><p class="note note-success">author: YaoGuangMing   2022-HDU </p><p class="note note-warning">转载请标明出处！ </p>]]></content>
     
@@ -119,8 +119,8 @@
   
   <entry>
     <title>操作系统实验二（题目五）</title>
-    <link href="/2022/10/13/p17-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%9E%E9%AA%8C%E4%BA%8C%E9%A2%98%E7%9B%AE5/"/>
-    <url>/2022/10/13/p17-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%9E%E9%AA%8C%E4%BA%8C%E9%A2%98%E7%9B%AE5/</url>
+    <link href="/2022/10/13/p10-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%9E%E9%AA%8C%E4%BA%8C%E9%A2%98%E7%9B%AE5/"/>
+    <url>/2022/10/13/p10-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%9E%E9%AA%8C%E4%BA%8C%E9%A2%98%E7%9B%AE5/</url>
     
     <content type="html"><![CDATA[<blockquote><p>实验二（题目五）</p><span id="more"></span></blockquote><h3 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h3><ul><li>题目内容：改变主机名称为自定义字符串</li><li>思路：<del>其实就是把原系统调用的sethostname搬过来</del></li><li>平台：华为云ubuntu20.04操作系统</li><li>注意：内核编译完成后，服务器重启之后一定要用VCN登录，在VCN上再reboot一下,会出现一个选择界面，选第二个就可以看到你编译的内核了，cloud重启登录内核是加不进去的</li><li>命令：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs bash">wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.14.295.tar.xz<br>xz -d linux-4.14.295.tar.xz <br>tar -xvf linux-4.14.295.tar <br>vim <span class="hljs-built_in">arch</span>/x86/entry/syscalls/syscall_64.tbl//添加调用号<br>vim include/linux/syscalls.h//函数声明<br>vim kernel/sys.c//函数实现<br>apt-get install libncurses5-dev<br>apt-get install libssl-dev<br>apt-get install flex<br>apt-get install bison<br>make mrproper<br>make menuconfig<br>make -j128<br>make -j128  modules<br>make modules_install<br>make install<br>reboot<br></code></pre></td></tr></table></figure>编译过程中好像有个关于debian….的错误，笔者是输入 scripts&#x2F;config –set-str SYSTEM_TRUSTED_KEYS “” 解决的 ，还有就是哪个bzimg的错误（编译的时候先把服务器配置改成128核的CPU，然后就很快乐）</li></ul><hr><h3 id="调用函数代码"><a href="#调用函数代码" class="headerlink" title="调用函数代码"></a>调用函数代码</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-built_in">SYSCALL_DEFINE2</span>(ysethostname, <span class="hljs-type">char</span> __user*, name,<span class="hljs-type">int</span>, len)<br>&#123;<br><span class="hljs-type">int</span> errno;<br><span class="hljs-type">char</span> tmp[__NEW_UTS_LEN];<br><br><span class="hljs-keyword">if</span> (len &lt; <span class="hljs-number">0</span> || len &gt; __NEW_UTS_LEN)<br><span class="hljs-keyword">return</span> -EINVAL;<br>errno = -EFAULT;<br><span class="hljs-keyword">if</span> (!<span class="hljs-built_in">copy_from_user</span>(tmp, name, len)) &#123;<br><span class="hljs-keyword">struct</span> <span class="hljs-title class_">new_utsname</span> *u;<br><span class="hljs-built_in">down_write</span>(&amp;uts_sem);<br>u = <span class="hljs-built_in">utsname</span>();<br><span class="hljs-built_in">memcpy</span>(u-&gt;nodename, tmp, len);<br><span class="hljs-built_in">memset</span>(u-&gt;nodename + len, <span class="hljs-number">0</span>, <span class="hljs-built_in">sizeof</span>(u-&gt;nodename) - len);<br>errno = <span class="hljs-number">0</span>;<br><span class="hljs-built_in">up_write</span>(&amp;uts_sem);<br>&#125;<br><span class="hljs-keyword">return</span> errno;<br>&#125;<br></code></pre></td></tr></table></figure><hr><h3 id="测试调用C代码"><a href="#测试调用C代码" class="headerlink" title="测试调用C代码"></a>测试调用C代码</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;unistd.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;sys/syscall.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;string.h&gt;</span></span><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br><span class="hljs-type">char</span> name[<span class="hljs-number">64</span>];<br><span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;input name:&quot;</span>);<br><span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%s&quot;</span>,name);<br><span class="hljs-type">int</span> len=<span class="hljs-built_in">strlen</span>(name);<br>        <span class="hljs-built_in">syscall</span>(<span class="hljs-number">333</span>,name,len);<br>        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;success\n&quot;</span>);<br>        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure><p class="note note-success">author: YaoGuangMing   2022-HDU </p><p class="note note-warning">转载请标明出处！ </p>]]></content>
     
@@ -138,8 +138,8 @@
   
   <entry>
     <title>关于不定积分和定积分计算的小技巧</title>
-    <link href="/2022/10/07/p16-%E5%85%B3%E4%BA%8E%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86%E5%92%8C%E5%AE%9A%E7%A7%AF%E5%88%86%E8%AE%A1%E7%AE%97%E7%9A%84%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
-    <url>/2022/10/07/p16-%E5%85%B3%E4%BA%8E%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86%E5%92%8C%E5%AE%9A%E7%A7%AF%E5%88%86%E8%AE%A1%E7%AE%97%E7%9A%84%E5%B0%8F%E6%8A%80%E5%B7%A7/</url>
+    <link href="/2022/10/07/p9-%E5%85%B3%E4%BA%8E%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86%E5%92%8C%E5%AE%9A%E7%A7%AF%E5%88%86%E8%AE%A1%E7%AE%97%E7%9A%84%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    <url>/2022/10/07/p9-%E5%85%B3%E4%BA%8E%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86%E5%92%8C%E5%AE%9A%E7%A7%AF%E5%88%86%E8%AE%A1%E7%AE%97%E7%9A%84%E5%B0%8F%E6%8A%80%E5%B7%A7/</url>
     
     <content type="html"><![CDATA[<p>😶 §(<em>￣▽￣</em>)§</p><span id="more"></span><h3 id="不定积分"><a href="#不定积分" class="headerlink" title="不定积分"></a>不定积分</h3><h4 id="1"><a href="#1" class="headerlink" title="1"></a>1</h4><p><img src="/img/%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%861.png"></p><h4 id="2"><a href="#2" class="headerlink" title="2"></a>2</h4><p>当被积函数为三角有理式 R(sinx，cosx)，做一下代换会更方便<br>若 R(-sinx，cosx)&#x3D;-R(sinx，cosx)，令cosx&#x3D;t;<br>若 R(sinx，-cosx)&#x3D;-R(sinx，cosx)，令sinx&#x3D;t;<br>若 R(-sinx，-cosx)&#x3D;R(sinx，cosx)，令tanx&#x3D;t;</p><h4 id="3"><a href="#3" class="headerlink" title="3"></a>3</h4><p><img src="/img/%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%862.png"></p><h4 id="4"><a href="#4" class="headerlink" title="4"></a>4</h4><p><img src="/img/%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%863.png"></p><h4 id="5"><a href="#5" class="headerlink" title="5"></a>5</h4><p><img src="/img/%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%864.png"><br><img src="/img/%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%865.png"></p><hr><h3 id="定积分"><a href="#定积分" class="headerlink" title="定积分"></a>定积分</h3><h4 id="1-1"><a href="#1-1" class="headerlink" title="1"></a>1</h4><p><img src="/img/%E5%AE%9A%E7%A7%AF%E5%88%861.png"></p><h4 id="2-1"><a href="#2-1" class="headerlink" title="2"></a>2</h4><p>$$<br>\int_a^b f(x)dx&#x3D;\int_a^b f(a+b-x)dx<br>$$</p><h4 id="3-1"><a href="#3-1" class="headerlink" title="3"></a>3</h4><p>$$<br>\int_{-a}^a f(x)dx&#x3D;\int_0^a f(x)+f(-x)dx<br>$$</p><h4 id="4-1"><a href="#4-1" class="headerlink" title="4"></a>4</h4><p>$$<br>\int^{\pi}_0 xf(\sin x)dx&#x3D;\frac{\pi}{2} \int_0^{\pi} f(\sin x)dx<br>$$<br>跟一般的形式为，若 f(x) 关于 $\frac{a+b}{2}$对称，有<br>$$<br>\int_a^b xf(x)dx&#x3D;\frac{a+b}{2} \int_a^b f(x)dx<br>$$</p><h4 id="5-1"><a href="#5-1" class="headerlink" title="5"></a>5</h4><p><img src="/img/%E5%AE%9A%E7%A7%AF%E5%88%862.png"></p><p class="note note-success">author: YaoGuangMing   2022-HDU </p><p class="note note-warning">转载请标明出处！ </p>]]></content>
     
@@ -157,8 +157,8 @@
   
   <entry>
     <title>关于分式除法和有理式分解</title>
-    <link href="/2022/10/05/p15-%E5%85%B3%E4%BA%8E%E5%88%86%E5%BC%8F%E9%99%A4%E6%B3%95%E5%92%8C%E6%9C%89%E7%90%86%E5%BC%8F%E5%88%86%E8%A7%A3/"/>
-    <url>/2022/10/05/p15-%E5%85%B3%E4%BA%8E%E5%88%86%E5%BC%8F%E9%99%A4%E6%B3%95%E5%92%8C%E6%9C%89%E7%90%86%E5%BC%8F%E5%88%86%E8%A7%A3/</url>
+    <link href="/2022/10/05/p8-%E5%85%B3%E4%BA%8E%E5%88%86%E5%BC%8F%E9%99%A4%E6%B3%95%E5%92%8C%E6%9C%89%E7%90%86%E5%BC%8F%E5%88%86%E8%A7%A3/"/>
+    <url>/2022/10/05/p8-%E5%85%B3%E4%BA%8E%E5%88%86%E5%BC%8F%E9%99%A4%E6%B3%95%E5%92%8C%E6%9C%89%E7%90%86%E5%BC%8F%E5%88%86%E8%A7%A3/</url>
     
     <content type="html"><![CDATA[<blockquote><p>多项式带余除法和分式分解</p><span id="more"></span><p>本篇主要可以用在不定积分的分式问题和某些数列问题上</p></blockquote><h3 id="多项式带余除法"><a href="#多项式带余除法" class="headerlink" title="多项式带余除法"></a>多项式带余除法</h3><p>若f(x)的阶数高于g(x)，即 $\frac{f(x)}{g(x)}$ 是一个假分式，可以用带余除法进行化简成<br>$$<br>f(x)&#x3D;q(x) + \frac{r(x)}{g(x)}<br>$$<br>这个给出一个例子<br><img src="/img/%E5%B8%A6%E4%BD%99%E9%99%A4%E6%B3%95.png"></p><hr><h3 id="真分式因式分解"><a href="#真分式因式分解" class="headerlink" title="真分式因式分解"></a>真分式因式分解</h3><p><img src="/img/%E7%9C%9F%E5%88%86%E5%BC%8F%E5%88%86%E8%A7%A31.png"><br><img src="/img/%E7%9C%9F%E5%88%86%E5%BC%8F%E5%88%86%E8%A7%A32.png"><br><img src="/img/%E7%9C%9F%E5%88%86%E5%BC%8F%E5%88%86%E8%A7%A33.png"><br><img src="/img/%E7%9C%9F%E5%88%86%E5%BC%8F%E5%88%86%E8%A7%A34.png"></p><p class="note note-success">author: YaoGuangMing   2022-HDU </p><p class="note note-warning">转载请标明出处！ </p>]]></content>
     
@@ -175,149 +175,16 @@
   
   
   <entry>
-    <title>无穷级数篇</title>
-    <link href="/2022/10/04/p14-%E9%A2%98%E9%9B%86%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0%E7%AF%87/"/>
-    <url>/2022/10/04/p14-%E9%A2%98%E9%9B%86%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0%E7%AF%87/</url>
+    <title>分享一些题目</title>
+    <link href="/2022/10/04/p7-%E5%88%86%E4%BA%AB%E4%B8%80%E4%BA%9B%E9%A2%98%E7%9B%AE/"/>
+    <url>/2022/10/04/p7-%E5%88%86%E4%BA%AB%E4%B8%80%E4%BA%9B%E9%A2%98%E7%9B%AE/</url>
     
-    <content type="html"><![CDATA[<blockquote><p>无穷级数篇</p><span id="more"></span></blockquote><h3 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h3><p><img src="/img/math/mc8.png"></p><hr><h3 id="个人小总结"><a href="#个人小总结" class="headerlink" title="个人小总结"></a>个人小总结</h3><p><img src="/img/z1.jpg"></p><p class="note note-info">  更新于 2022/10/15</p><p class="note note-success">author: YaoGuangMing   2022-HDU </p><p class="note note-warning">转载请标明出处！ </p>]]></content>
-    
-    
-    <categories>
-      
-      <category>题集(高数)</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>常微分方程篇</title>
-    <link href="/2022/10/04/p13-%E9%A2%98%E9%9B%86%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%AF%87/"/>
-    <url>/2022/10/04/p13-%E9%A2%98%E9%9B%86%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%AF%87/</url>
-    
-    <content type="html"><![CDATA[<blockquote><p>常微分方程篇</p><span id="more"></span></blockquote><h3 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h3><p><img src="/img/math/mc7.png"></p><hr><h3 id="个人小总结"><a href="#个人小总结" class="headerlink" title="个人小总结"></a>个人小总结</h3><p><img src="/img/z2.jpg"><br><img src="/img/z3.jpg"></p><p class="note note-info">  更新于 2022/10/15 </p><p class="note note-success">author: YaoGuangMing   2022-HDU </p><p class="note note-warning">转载请标明出处！ </p>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>持续更新中</p><span id="more"></span></blockquote><h2 id="函数极限连续"><a href="#函数极限连续" class="headerlink" title="函数极限连续"></a>函数极限连续</h2><h3 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h3><p><img src="/img/math/mc1.png"></p><hr><h3 id="题1"><a href="#题1" class="headerlink" title="题1"></a>题1</h3><p>一道巧妙求反函数的题<br><img src="/img/math/3.png"><br><img src="/img/math/3_1.png"></p><hr><h3 id="题2"><a href="#题2" class="headerlink" title="题2"></a>题2</h3><p><img src="/img/math/4.png"><br><img src="/img/math/4_1.png"></p><hr><h3 id="题3"><a href="#题3" class="headerlink" title="题3"></a>题3</h3><p><img src="/img/math/5.png"><br><img src="/img/math/5_1.png"></p><hr><h3 id="题4"><a href="#题4" class="headerlink" title="题4"></a>题4</h3><p><img src="/img/math/6.png"><br><img src="/img/math/6_1.png"></p><hr><h3 id="题5"><a href="#题5" class="headerlink" title="题5"></a>题5</h3><p>这个三角换元我…. 真的没话说<br><img src="/img/math/7.png"><br><img src="/img/math/7_1.png"></p><hr><h3 id="题6"><a href="#题6" class="headerlink" title="题6"></a>题6</h3><p>这个零式，运用的很巧<br><img src="/img/math/8.png"><br><img src="/img/math/8_1.png"></p><hr><h3 id="题7"><a href="#题7" class="headerlink" title="题7"></a>题7</h3><p>两次stolz，有点明白为啥说是数列的中的洛必达了…<br><img src="/img/math/9.png"><br><img src="/img/math/9_1.png"></p><hr><h3 id="题8"><a href="#题8" class="headerlink" title="题8"></a>题8</h3><p>这个放缩的函数找的有亿点点好哇<br><img src="/img/math/10.png"><br><img src="/img/math/10_1.png"></p><hr><h3 id="题9"><a href="#题9" class="headerlink" title="题9"></a>题9</h3><p><img src="/img/math/11.png"><br><img src="/img/math/11_1.png"></p><hr><h3 id="题10"><a href="#题10" class="headerlink" title="题10"></a>题10</h3><p><img src="/img/math/12.png"><br><img src="/img/math/12_1.png"></p><hr><h3 id="题11"><a href="#题11" class="headerlink" title="题11"></a>题11</h3><p>这个解答的分析思路很好<br><img src="/img/math/13.png"><br><img src="/img/math/13_1.png"><br><img src="/img/math/13_2.png"></p><hr><h3 id="题12"><a href="#题12" class="headerlink" title="题12"></a>题12</h3><p><img src="/img/math/23.png"><br><img src="/img/math/23_1.png"></p><hr><h2 id="一元函数微分"><a href="#一元函数微分" class="headerlink" title="一元函数微分"></a>一元函数微分</h2><h3 id="概要-1"><a href="#概要-1" class="headerlink" title="概要"></a>概要</h3><p><img src="/img/math/mc2.png"></p><hr><h3 id="题1-1"><a href="#题1-1" class="headerlink" title="题1"></a>题1</h3><p>主要是那段评注，给出了构造函数的方法，这是十分重要的<br><img src="/img/math/14.png"></p><hr><h3 id="题2-1"><a href="#题2-1" class="headerlink" title="题2"></a>题2</h3><p><img src="/img/math/15.png"></p><hr><h3 id="题3-1"><a href="#题3-1" class="headerlink" title="题3"></a>题3</h3><p><img src="/img/math/16.png"><br><img src="/img/math/16_1.png"><br><img src="/img/math/16_2.png"></p><hr><h3 id="题4-1"><a href="#题4-1" class="headerlink" title="题4"></a>题4</h3><p><img src="/img/math/17.png"><br><img src="/img/math/17_1.png"></p><hr><h3 id="题5-1"><a href="#题5-1" class="headerlink" title="题5"></a>题5</h3><p><img src="/img/math/18.png"><br><img src="/img/math/18_1.png"></p><hr><h2 id="一元函数积分"><a href="#一元函数积分" class="headerlink" title="一元函数积分"></a>一元函数积分</h2><h3 id="概要-2"><a href="#概要-2" class="headerlink" title="概要"></a>概要</h3><p><img src="/img/math/mc3.png"></p><hr><h3 id="1"><a href="#1" class="headerlink" title="1"></a>1</h3><p><img src="/img/math/19.png"><br><img src="/img/math/19_1.png"><br><img src="/img/math/19_2.png"></p><hr><h3 id="2"><a href="#2" class="headerlink" title="2"></a>2</h3><p><img src="/img/math/20.png"><br><img src="/img/math/20_1.png"></p><hr><h3 id="3"><a href="#3" class="headerlink" title="3"></a>3</h3><p><img src="/img/math/24.png"><br><img src="/img/math/24_1.png"></p><hr><h3 id="4"><a href="#4" class="headerlink" title="4"></a>4</h3><p><img src="/img/math/25.png"><br><img src="/img/math/25_1.png"></p><hr><h2 id="多元函数微分"><a href="#多元函数微分" class="headerlink" title="多元函数微分"></a>多元函数微分</h2><h3 id="概要-3"><a href="#概要-3" class="headerlink" title="概要"></a>概要</h3><p><img src="/img/math/mc4.png"></p><hr><h3 id="1-1"><a href="#1-1" class="headerlink" title="1"></a>1</h3><p><img src="/img/math/26.png"><br>令y&#x3D;2x，之后对x,y求偏导，联立方程即可</p><hr><h2 id="多元数量值函数积分篇"><a href="#多元数量值函数积分篇" class="headerlink" title="多元数量值函数积分篇"></a>多元数量值函数积分篇</h2><h3 id="概要-4"><a href="#概要-4" class="headerlink" title="概要"></a>概要</h3><p><img src="/img/math/mc5.png"></p><hr><h3 id="1-2"><a href="#1-2" class="headerlink" title="1"></a>1</h3><p><img src="/img/math/21.png"><br><img src="/img/math/21_1.png"></p><hr><h3 id="2-1"><a href="#2-1" class="headerlink" title="2"></a>2</h3><p><img src="/img/math/22.png"></p><hr><h2 id="多元向量值函数积分篇"><a href="#多元向量值函数积分篇" class="headerlink" title="多元向量值函数积分篇"></a>多元向量值函数积分篇</h2><h3 id="概要-5"><a href="#概要-5" class="headerlink" title="概要"></a>概要</h3><p><img src="/img/math/mc6.png"></p><hr><h2 id="常微分方程篇"><a href="#常微分方程篇" class="headerlink" title="常微分方程篇"></a>常微分方程篇</h2><h3 id="概要-6"><a href="#概要-6" class="headerlink" title="概要"></a>概要</h3><p><img src="/img/math/mc7.png"></p><hr><h3 id="个人小总结"><a href="#个人小总结" class="headerlink" title="个人小总结"></a>个人小总结</h3><p><img src="/img/z2.jpg"><br><img src="/img/z3.jpg"></p><hr><h2 id="无穷级数篇"><a href="#无穷级数篇" class="headerlink" title="无穷级数篇"></a>无穷级数篇</h2><h3 id="概要-7"><a href="#概要-7" class="headerlink" title="概要"></a>概要</h3><p><img src="/img/math/mc8.png"></p><hr><h3 id="个人小总结-1"><a href="#个人小总结-1" class="headerlink" title="个人小总结"></a>个人小总结</h3><p><img src="/img/z1.jpg"></p><p class="note note-info">  更新于 2022/11/7</p><p class="note note-success">author: YaoGuangMing     2022-HDU  </p><p class="note note-warning">转载请标明出处！ </p>]]></content>
     
     
     <categories>
       
-      <category>题集(高数)</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>多元向量值函数积分篇</title>
-    <link href="/2022/10/04/p12-%E9%A2%98%E9%9B%86%E5%A4%9A%E5%85%83%E5%90%91%E9%87%8F%E5%80%BC%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E7%AF%87/"/>
-    <url>/2022/10/04/p12-%E9%A2%98%E9%9B%86%E5%A4%9A%E5%85%83%E5%90%91%E9%87%8F%E5%80%BC%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E7%AF%87/</url>
-    
-    <content type="html"><![CDATA[<blockquote><p>多元向量值函数积分篇</p><span id="more"></span></blockquote><h3 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h3><p><img src="/img/math/mc6.png"></p><hr><p class="note note-info">  更新于... </p><p class="note note-success">author: YaoGuangMing   2022-HDU </p><p class="note note-warning">转载请标明出处！ </p>]]></content>
-    
-    
-    <categories>
-      
-      <category>题集(高数)</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>多元数量值函数积分篇</title>
-    <link href="/2022/10/04/p11-%E9%A2%98%E9%9B%86%E5%A4%9A%E5%85%83%E6%95%B0%E9%87%8F%E5%80%BC%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E7%AF%87/"/>
-    <url>/2022/10/04/p11-%E9%A2%98%E9%9B%86%E5%A4%9A%E5%85%83%E6%95%B0%E9%87%8F%E5%80%BC%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E7%AF%87/</url>
-    
-    <content type="html"><![CDATA[<blockquote><p>多元数量值函数积分篇</p><span id="more"></span></blockquote><h3 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h3><p><img src="/img/math/mc5.png"></p><hr><h3 id="1"><a href="#1" class="headerlink" title="1"></a>1</h3><p><img src="/img/math/21.png"><br><img src="/img/math/21_1.png"></p><hr><h3 id="2"><a href="#2" class="headerlink" title="2"></a>2</h3><p><img src="/img/math/22.png"></p><p class="note note-info">  更新于2022/10/11</p><p class="note note-success">author: YaoGuangMing   2022-HDU </p><p class="note note-warning">转载请标明出处！ </p>]]></content>
-    
-    
-    <categories>
-      
-      <category>题集(高数)</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>多元函数微分篇</title>
-    <link href="/2022/10/04/p10-%E9%A2%98%E9%9B%86%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E7%AF%87/"/>
-    <url>/2022/10/04/p10-%E9%A2%98%E9%9B%86%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E7%AF%87/</url>
-    
-    <content type="html"><![CDATA[<blockquote><p>多元函数微分篇</p><span id="more"></span></blockquote><h3 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h3><p><img src="/img/math/mc4.png"></p><hr><h3 id="1"><a href="#1" class="headerlink" title="1"></a>1</h3><p><img src="/img/math/26.png"><br>令y&#x3D;2x，之后对x,y求偏导，联立方程即可</p><p class="note note-info">  更新于2022/10/23</p><p class="note note-success">author: YaoGuangMing   2022-HDU </p><p class="note note-warning">转载请标明出处！ </p>]]></content>
-    
-    
-    <categories>
-      
-      <category>题集(高数)</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>一元函数积分篇</title>
-    <link href="/2022/10/04/p9-%E9%A2%98%E9%9B%86%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E7%AF%87/"/>
-    <url>/2022/10/04/p9-%E9%A2%98%E9%9B%86%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E7%AF%87/</url>
-    
-    <content type="html"><![CDATA[<blockquote><p>一元函数积分篇</p><span id="more"></span></blockquote><h3 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h3><p><img src="/img/math/mc3.png"></p><hr><h3 id="1"><a href="#1" class="headerlink" title="1"></a>1</h3><p><img src="/img/math/19.png"><br><img src="/img/math/19_1.png"><br><img src="/img/math/19_2.png"></p><hr><h3 id="2"><a href="#2" class="headerlink" title="2"></a>2</h3><p><img src="/img/math/20.png"><br><img src="/img/math/20_1.png"></p><hr><h3 id="3"><a href="#3" class="headerlink" title="3"></a>3</h3><p><img src="/img/math/24.png"><br><img src="/img/math/24_1.png"></p><hr><h3 id="4"><a href="#4" class="headerlink" title="4"></a>4</h3><p><img src="/img/math/25.png"><br><img src="/img/math/25_1.png"></p><p class="note note-info">  更新于 2022/10/23</p><p class="note note-success">author: YaoGuangMing   2022-HDU </p><p class="note note-warning">转载请标明出处！ </p>]]></content>
-    
-    
-    <categories>
-      
-      <category>题集(高数)</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>一元函数微分篇</title>
-    <link href="/2022/10/04/p8-%E9%A2%98%E9%9B%86%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E7%AF%87/"/>
-    <url>/2022/10/04/p8-%E9%A2%98%E9%9B%86%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E7%AF%87/</url>
-    
-    <content type="html"><![CDATA[<blockquote><p>一元函数微分篇</p><span id="more"></span></blockquote><h3 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h3><p><img src="/img/math/mc2.png"></p><hr><h3 id="题1"><a href="#题1" class="headerlink" title="题1"></a>题1</h3><p>主要是那段评注，给出了构造函数的方法，这是十分重要的<br><img src="/img/math/14.png"></p><hr><h3 id="题2"><a href="#题2" class="headerlink" title="题2"></a>题2</h3><p><img src="/img/math/15.png"></p><hr><h3 id="题3"><a href="#题3" class="headerlink" title="题3"></a>题3</h3><p><img src="/img/math/16.png"><br><img src="/img/math/16_1.png"><br><img src="/img/math/16_2.png"></p><hr><h3 id="题4"><a href="#题4" class="headerlink" title="题4"></a>题4</h3><p><img src="/img/math/17.png"><br><img src="/img/math/17_1.png"></p><hr><h3 id="题5"><a href="#题5" class="headerlink" title="题5"></a>题5</h3><p><img src="/img/math/18.png"><br><img src="/img/math/18_1.png"></p><hr><p class="note note-info">  更新于 2022/10/5 </p><p class="note note-success">author: YaoGuangMing     2022-HDU </p><p class="note note-warning">转载请标明出处！ </p>]]></content>
-    
-    
-    <categories>
-      
-      <category>题集(高数)</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>函数极限连续篇</title>
-    <link href="/2022/10/04/p7-%E9%A2%98%E9%9B%86%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E8%BF%9E%E7%BB%AD/"/>
-    <url>/2022/10/04/p7-%E9%A2%98%E9%9B%86%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E8%BF%9E%E7%BB%AD/</url>
-    
-    <content type="html"><![CDATA[<blockquote><p>函数极限连续篇</p><span id="more"></span></blockquote><h3 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h3><p><img src="/img/math/mc1.png"></p><hr><h3 id="题1"><a href="#题1" class="headerlink" title="题1"></a>题1</h3><p>一道巧妙求反函数的题<br><img src="/img/math/3.png"><br><img src="/img/math/3_1.png"></p><hr><h3 id="题2"><a href="#题2" class="headerlink" title="题2"></a>题2</h3><p><img src="/img/math/4.png"><br><img src="/img/math/4_1.png"></p><hr><h3 id="题3"><a href="#题3" class="headerlink" title="题3"></a>题3</h3><p><img src="/img/math/5.png"><br><img src="/img/math/5_1.png"></p><hr><h3 id="题4"><a href="#题4" class="headerlink" title="题4"></a>题4</h3><p><img src="/img/math/6.png"><br><img src="/img/math/6_1.png"></p><hr><h3 id="题5"><a href="#题5" class="headerlink" title="题5"></a>题5</h3><p>这个三角换元我…. 真的没话说<br><img src="/img/math/7.png"><br><img src="/img/math/7_1.png"></p><hr><h3 id="题6"><a href="#题6" class="headerlink" title="题6"></a>题6</h3><p>这个零式，运用的很巧<br><img src="/img/math/8.png"><br><img src="/img/math/8_1.png"></p><hr><h3 id="题7"><a href="#题7" class="headerlink" title="题7"></a>题7</h3><p>两次stolz，有点明白为啥说是数列的中的洛必达了…<br><img src="/img/math/9.png"><br><img src="/img/math/9_1.png"></p><hr><h3 id="题8"><a href="#题8" class="headerlink" title="题8"></a>题8</h3><p>这个放缩的函数找的有亿点点好哇<br><img src="/img/math/10.png"><br><img src="/img/math/10_1.png"></p><hr><h3 id="题9"><a href="#题9" class="headerlink" title="题9"></a>题9</h3><p><img src="/img/math/11.png"><br><img src="/img/math/11_1.png"></p><hr><h3 id="题10"><a href="#题10" class="headerlink" title="题10"></a>题10</h3><p><img src="/img/math/12.png"><br><img src="/img/math/12_1.png"></p><hr><h3 id="题11"><a href="#题11" class="headerlink" title="题11"></a>题11</h3><p>这个解答的分析思路很好<br><img src="/img/math/13.png"><br><img src="/img/math/13_1.png"><br><img src="/img/math/13_2.png"></p><hr><h3 id="题12"><a href="#题12" class="headerlink" title="题12"></a>题12</h3><p><img src="/img/math/23.png"><br><img src="/img/math/23_1.png"></p><p class="note note-info">  更新于 2022/10/23 </p><p class="note note-success">author: YaoGuangMing     2022-HDU  </p><p class="note note-warning">转载请标明出处！ </p>]]></content>
-    
-    
-    <categories>
-      
-      <category>题集(高数)</category>
+      <category>高等数学</category>
       
     </categories>
     
