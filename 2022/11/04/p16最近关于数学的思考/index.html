@@ -24,7 +24,7 @@
 <meta property="og:description" content="一些小想法">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-11-04T11:37:24.000Z">
-<meta property="article:modified_time" content="2022-11-04T13:14:11.648Z">
+<meta property="article:modified_time" content="2022-11-09T15:03:25.563Z">
 <meta property="article:author" content="YaoGuangMing">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -240,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1k 字
+          2.1k 字
         
       </span>
     
@@ -251,7 +251,7 @@
         
         
         
-          9 分钟
+          18 分钟
         
       </span>
     
@@ -313,6 +313,8 @@
 <h3 id="函数的凸性与凹性"><a href="#函数的凸性与凹性" class="headerlink" title="函数的凸性与凹性"></a>函数的凸性与凹性</h3><p>体现函数凹凸性的地方是泰勒不等式，假设 f(x) 是个凸函数，即 f’’(x) &gt;&#x3D;0 则有泰勒展开：<br>$$<br>f(x)&#x3D;f(x_0)+f’(x_0)(x-x_0) + f’’(\xi)(x-x_0)^2<br>$$<br>于是有：<br>$$<br>f(x) \geq f(x_0)+f’(x_0)(x-x_0)<br>$$<br>不等式两边积分有：<br>$$<br>\int_a^b f(x)dx \geq \int_a^b f(x_0)dx+f’(x_0)\int_a^b (x-x_0)dx<br>$$<br>这里给出一个例子也是竞赛真题<br>证明：<br>$$<br>\int_0^1 \ln f(x)dx \leq \ln{\int_0^1 f(x)dx}<br>$$<br>比较典型的一个体现函数凹凸性的是<strong>琴生不等式</strong>，也可以用泰勒不等式证明</p>
 <hr>
 <h3 id="正交变换"><a href="#正交变换" class="headerlink" title="正交变换"></a>正交变换</h3><p>正交变换的雅可比行列式为1，且积分区域保持不变，用他进行换元可解决一些重积分的难题，一个比较好应用是<strong>possion公式</strong>：<br>$$<br>\iint_{x^2+y^2+z^2&#x3D;1} f(ax+by+cz)dS &#x3D;2\pi \int_{-1}^1 f(u\sqrt{a^2+b^2+c^2})du<br>$$</p>
+<hr>
+<h3 id="一些偏小众的解法和结论"><a href="#一些偏小众的解法和结论" class="headerlink" title="一些偏小众的解法和结论"></a>一些偏小众的解法和结论</h3><p>1.计算积分<br>$$<br>\int \sqrt{2+\sqrt{2+\sqrt{2+\sqrt{···+\sqrt{2+x}}}}} dx(\ast)<br>$$<br>解：令x&#x3D;2cost ,于是有<br>$$<br>\sqrt{2+x}&#x3D;2\cos\frac{t}{2}<br>$$<br>依次合并，可以得到<br>$$<br>(\ast) &#x3D; \int -4\sin t \cos\frac{t}{2^n}dt<br>$$<br>运用积化和差公式，可得出结果<br>2.f(x)单调，证<br>$$<br>\lim_{h\rightarrow 0^+} h\sum_{n&#x3D;1}^{+\infty}f(nh)&#x3D;\int_0^{+\infty}f(x)dx (\ast)<br>$$<br>解：假设f(x)单调有<br>$$<br>\sum_{n&#x3D;1}^{+\infty}\int_{(n-1)h}^{nh}f(x) dx\leq \sum_{n&#x3D;1}^{+\infty}\int_{(n-1)h}^{nh} f(nh)dx<br>$$<br>$$<br>\sum_{n&#x3D;1}^{+\infty}\int_{nh}^{(n+1)h}f(nh) dx\leq \sum_{n&#x3D;1}^{+\infty}\int_{nh}^{(n+1)h} f(x)dx<br>$$<br>所以有<br>$$<br>\int_0^{+\infty}f(x)dx \leq (\ast)\leq \int_h^{+\infty}f(x)dx<br>$$<br>3.求积分<br>$$<br>\int_0^1 (1+x^+x^2+x^3+···+x^{n-1})^2(1+4x+7x^2+···+(3n-2)x^{n-1})dx<br>$$<br>解：换元<br>$$<br>x&#x3D;t^3<br>$$<br>4.求证<br>$$<br>\int_0^1 x^n f(x)dx&#x3D;0<br>$$<br>若f(x)连续，求证：<br>$$<br>n\int_0^1 x^n f(x)dx&#x3D;f(1)<br>$$<br>5.求证<br>$$<br>\int_{-\infty}^{+\infty} f(x-\frac{a}{x})dx&#x3D;\int_{-\infty}^{+\infty}f(x)dx<br>$$<br>解：换元<br>$$<br>x-\frac{a}{x}&#x3D;t<br>$$<br>6.求证<br>$$<br>\int_0^1 f(x^n)dx&#x3D;f(0)<br>$$<br>解：泰勒展开<br>7.求<br>$$<br>\lim_{n\rightarrow \infty} \int \frac{d^n(\frac{f(x)-f(a)}{x-a})}{dx^n}&#x3D;\frac{f^{(n+1)}(a)}{n+1}<br>$$<br>8.求<br>$$<br>\lim \sqrt[n]{\int_a^b f^n (x)dx}&#x3D;f_{max}(x)<br>$$</p>
 <p class="note note-success">author: YaoGuangMing   2022-HDU </p>
 <p class="note note-warning">转载请标明出处！ </p>
                 
