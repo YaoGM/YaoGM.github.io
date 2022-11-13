@@ -39,7 +39,7 @@
 <meta property="og:image" content="http://example.com/img/cnet/socket/2.png">
 <meta property="og:image" content="http://example.com/img/cnet/socket/1.png">
 <meta property="article:published_time" content="2022-11-13T06:20:14.000Z">
-<meta property="article:modified_time" content="2022-11-13T08:46:54.561Z">
+<meta property="article:modified_time" content="2022-11-13T15:26:32.922Z">
 <meta property="article:author" content="YaoGuangMing">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://example.com/img/cnet/Apache/1.png">
@@ -254,7 +254,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          6.8k 字
+          7.1k 字
         
       </span>
     
@@ -265,7 +265,7 @@
         
         
         
-          57 分钟
+          60 分钟
         
       </span>
     
@@ -319,10 +319,10 @@
                 <p>Apache部署&amp;DNS配置&amp;Socket编程</p>
 <span id="more"></span>
 
-<h3 id="Apache部署"><a href="#Apache部署" class="headerlink" title="Apache部署"></a>Apache部署</h3><h4 id="Apache的安装和配置"><a href="#Apache的安装和配置" class="headerlink" title="Apache的安装和配置"></a>Apache的安装和配置</h4><p>1.下载地址：<a target="_blank" rel="noopener" href="https://www.apachehaus.com/downloads/httpd-2.4.54-o111s-x86-vs17.zip">https://www.apachehaus.com/downloads/httpd-2.4.54-o111s-x86-vs17.zip</a><br>2.更改conf&#x2F;httpd.conf配置文件，监听端口改为8081<br>3.安装系统服务<br>4.测试服务<br><img src="/img/cnet/Apache/1.png" srcset="/img/loading.gif" lazyload><br>5.查看端口是否正常工作<br><img src="/img/cnet/Apache/2.png" srcset="/img/loading.gif" lazyload></p>
-<h4 id="Apache性能调整"><a href="#Apache性能调整" class="headerlink" title="Apache性能调整"></a>Apache性能调整</h4><p>1.这部分用默认的就行，不需要更改</p>
-<h4 id="基于IP的虚拟主机配置"><a href="#基于IP的虚拟主机配置" class="headerlink" title="基于IP的虚拟主机配置"></a>基于IP的虚拟主机配置</h4><p>1.设置ip地址和端口号<br><img src="/img/cnet/Apache/3.png" srcset="/img/loading.gif" lazyload><br>2.浏览器打开查看<br><img src="/img/cnet/Apache/5.png" srcset="/img/loading.gif" lazyload></p>
-<h4 id="https服务的安装和配置"><a href="#https服务的安装和配置" class="headerlink" title="https服务的安装和配置"></a>https服务的安装和配置</h4><p>1.生成SSL文件<br>2.在windows下的hosts文件中加入服务器ip地址（C:\Windows\System32\drivers\etc）<br><img src="/img/cnet/Apache/7.png" srcset="/img/loading.gif" lazyload><br>3.设置虚拟服务器<br><img src="/img/cnet/Apache/4.png" srcset="/img/loading.gif" lazyload><br>4.结果浏览器死活打不开，只能用ping来验证一下<br><img src="/img/cnet/Apache/6.png" srcset="/img/loading.gif" lazyload></p>
+<h3 id="Apache部署"><a href="#Apache部署" class="headerlink" title="Apache部署"></a>Apache部署</h3><h4 id="Apache的安装和配置"><a href="#Apache的安装和配置" class="headerlink" title="Apache的安装和配置"></a>Apache的安装和配置</h4><p>1.下载地址：<a target="_blank" rel="noopener" href="https://www.apachehaus.com/downloads/httpd-2.4.54-o111s-x86-vs17.zip">https://www.apachehaus.com/downloads/httpd-2.4.54-o111s-x86-vs17.zip</a><br>2.解压放在 C:\Apache24<br>3.更改conf&#x2F;httpd.conf配置文件，更改安装目录并且监听端口改为8081<br>4.管理员打开cmd面板，安装系统服务，输入命令<br>cd \Apache24\bin<br>httpd.exe -k install<br>5.测试服务<br><img src="/img/cnet/Apache/1.png" srcset="/img/loading.gif" lazyload><br>6.修改web根目录并开启apache服务，查看端口是否正常工作<br><img src="/img/cnet/Apache/2.png" srcset="/img/loading.gif" lazyload></p>
+<h4 id="Apache性能调整"><a href="#Apache性能调整" class="headerlink" title="Apache性能调整"></a>Apache性能调整</h4><p>1.这部分用默认的就行，不需要更改,直接跳过</p>
+<h4 id="基于IP的虚拟主机配置"><a href="#基于IP的虚拟主机配置" class="headerlink" title="基于IP的虚拟主机配置"></a>基于IP的虚拟主机配置</h4><p>1.启用vhosts配置，配置httpd-vhosts.conf<br>2.在httpd-vhosts.conf文件中设置ip地址和端口号<br><img src="/img/cnet/Apache/3.png" srcset="/img/loading.gif" lazyload><br>3.浏览器打开查看<br><img src="/img/cnet/Apache/5.png" srcset="/img/loading.gif" lazyload></p>
+<h4 id="https服务的安装和配置"><a href="#https服务的安装和配置" class="headerlink" title="https服务的安装和配置"></a>https服务的安装和配置</h4><p>1.拷贝conf&#x2F;openssl.cnf到bin目录下<br>2.生成SSL文件，并将生成好的key,crt,csr拷贝到conf目录<br>3.在windows下的hosts文件中加入服务器ip地址（C:\Windows\System32\drivers\etc）<br><img src="/img/cnet/Apache/7.png" srcset="/img/loading.gif" lazyload><br>4.httpd.conf启用SSL，httpd_ssl.conf文件设置虚拟服务器<br><img src="/img/cnet/Apache/4.png" srcset="/img/loading.gif" lazyload><br>5.结果浏览器死活打不开，只能用ping来验证一下<br><img src="/img/cnet/Apache/6.png" srcset="/img/loading.gif" lazyload></p>
 <hr>
 <h3 id="DNS配置"><a href="#DNS配置" class="headerlink" title="DNS配置"></a>DNS配置</h3><h4 id="写好五个配置文件（要我大命🙄）"><a href="#写好五个配置文件（要我大命🙄）" class="headerlink" title="写好五个配置文件（要我大命🙄）"></a>写好五个配置文件（要我大命🙄）</h4><p>127.0.0.zone文件</p>
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs text">$TTL 86400<br>0.0.127.in-addr.arpa. IN SOA dns1.someschool.edu.cn. admin.someschol.edu.cn. (<br>	1<br>	3h<br>	1h<br>	1w<br>	1h )<br>0.0.127.in-addr.arpa. IN NS dns1.someschool.edu.cn.<br>0.0.127.in-addr.arpa. IN NS dns2.someschool.edu.cn.<br><br>1.0.0.127.in-addr.arpa. IN PTR localhost.<br></code></pre></td></tr></table></figure>
@@ -334,13 +334,13 @@
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs text">.			3600000	NS A.ROOT-SERVERS.NET.<br>A.ROOT-SERVERS.NET.	3600000	A 198.41.0.4<br>A.ROOT-SERVERS.NET.	3600000	AAAA 2001:503:ba3e::2:30<br><br>.			3600000	NS B.ROOT-SERVERS.NET.<br>B.ROOT-SERVERS.NET.	3600000	A 199.9.14.201<br>B.ROOT-SERVERS.NET.	3600000	AAAA 2001:500:200::b<br><br>.			3600000	NS M.ROOT-SERVERS.NET.<br>M.ROOT-SERVERS.NET.	3600000	A  202.12.27.33<br>M.ROOT-SERVERS.NET.	3600000	AAAA 2001:dc3::35<br><br></code></pre></td></tr></table></figure>
 <p>someschool.edu.cn.zone文件</p>
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><code class="hljs text">$TTL 86400<br>someschool.edu.cn. IN SOA dns1.someschool.edu.cn. admin.someschool.edu.cn. (<br>	1<br>	3h<br>	1h<br>	1w<br>	1h )<br><br>someschool.edu.cn. IN NS dns1.someschool.edu.cn.<br>someschool.edu.cn. IN NS dns2.someschool.edu.cn.<br><br>localhost.someschool.edu.cn. IN A 127.0.0.1<br>dns1.someschool.edu.cn. IN A 192.168.3.1<br>dns2.someschool.edu.cn. IN A 192.168.3.2<br>web.someschool.edu.cn. IN A 192.168.3.3<br>mail.someschool.edu.cn. IN A 192.168.3.4<br><br>super1.someschool.edu.cn. IN A 192.168.4.103<br>graph.someschool.edu.cn. IN A 192.168.4.111<br><br>www.someschool.edu.cn. IN CNAME web.someschool.edu.cn.<br>ftp.someschool.edu.cn. IN CNAME web.someschool.edu.cn.<br><br>someschool.edu.cn. IN MX 10 mail.someschool.edu.cn.<br></code></pre></td></tr></table></figure>
-<h4 id="下载BIND9"><a href="#下载BIND9" class="headerlink" title="下载BIND9"></a>下载BIND9</h4><p>下载地址：<a target="_blank" rel="noopener" href="https://ftp.isc.org/isc/bind9/9.4.3/BIND9.4.3.zip">https://ftp.isc.org/isc/bind9/9.4.3/BIND9.4.3.zip</a></p>
-<h4 id="配置文件和检查"><a href="#配置文件和检查" class="headerlink" title="配置文件和检查"></a>配置文件和检查</h4><p>1.生成rndc文件</p>
+<h4 id="下载BIND9"><a href="#下载BIND9" class="headerlink" title="下载BIND9"></a>下载BIND9</h4><p>下载地址：<a target="_blank" rel="noopener" href="https://ftp.isc.org/isc/bind9/9.4.3/BIND9.4.3.zip">https://ftp.isc.org/isc/bind9/9.4.3/BIND9.4.3.zip</a><br>解压放在 C:\ISCBIND9</p>
+<h4 id="配置文件和检查"><a href="#配置文件和检查" class="headerlink" title="配置文件和检查"></a>配置文件和检查</h4><p>1.管理员打开cmd并将目录设置成ISCBIND9的bin目录,生成rndc文件</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash">rndc-confgen.exe -a<br>rndc-confgen.exe &gt; ..\etc\rndc.conf<br><span class="hljs-built_in">cd</span> ..\etc<br><span class="hljs-built_in">dir</span> rndc*<br><span class="hljs-built_in">dir</span><br></code></pre></td></tr></table></figure>
-<p>2.后两个命令和书上的不太一样，少了后缀名exe，书上那个命令我一直报错</p>
+<p>2.配置文件语法检查，后两个命令和书上的不太一样，少了后缀名exe，书上那个命令我一直报错</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">..\bin\named-checkconf.exe named.conf<br>..\bin\named-checkzone someschool.edu.cn^<br>..\bin\named-checkzone 0.0.127.in-addr.arpa 127.0.0.zone<br></code></pre></td></tr></table></figure>
 <p><img src="/img/cnet/DNS/1.png" srcset="/img/loading.gif" lazyload></p>
-<h4 id="BIND测试和DIG命令"><a href="#BIND测试和DIG命令" class="headerlink" title="BIND测试和DIG命令"></a>BIND测试和DIG命令</h4><p>1.windows服务面板启动BIND服务<br><img src="/img/cnet/DNS/2.png" srcset="/img/loading.gif" lazyload><br>2.网络更改本地DNS地址（这里我之前连的NetKeep一直改不了DNS地址，后来连的热点😑）<br><img src="/img/cnet/DNS/3.png" srcset="/img/loading.gif" lazyload><br>3.nslookup查看<br><img src="/img/cnet/DNS/4.png" srcset="/img/loading.gif" lazyload><br>4.DIG命令<br><img src="/img/cnet/DNS/5.png" srcset="/img/loading.gif" lazyload></p>
+<h4 id="BIND测试和DIG命令"><a href="#BIND测试和DIG命令" class="headerlink" title="BIND测试和DIG命令"></a>BIND测试和DIG命令</h4><p>1.windows服务面板启动BIND服务<br><img src="/img/cnet/DNS/2.png" srcset="/img/loading.gif" lazyload><br>2.网络中心更改本地DNS地址（这里我之前连的NetKeep一直改不了DNS地址，后来连的热点😑）<br><img src="/img/cnet/DNS/3.png" srcset="/img/loading.gif" lazyload><br>3.nslookup查看<br><img src="/img/cnet/DNS/4.png" srcset="/img/loading.gif" lazyload><br>4.DIG命令<br><img src="/img/cnet/DNS/5.png" srcset="/img/loading.gif" lazyload></p>
 <hr>
 <h3 id="Socket编程"><a href="#Socket编程" class="headerlink" title="Socket编程"></a>Socket编程</h3><h4 id="下载CFree5"><a href="#下载CFree5" class="headerlink" title="下载CFree5"></a>下载CFree5</h4><p>下载地址：<br><a target="_blank" rel="noopener" href="http://www.programarts.com/download/cfree5_0_pro_setup_ch_ysr16ofP2rbKyoE=.exe">http://www.programarts.com/download/cfree5_0_pro_setup_ch_ysr16ofP2rbKyoE=.exe</a></p>
 <h4 id="写服务端和客户端程序"><a href="#写服务端和客户端程序" class="headerlink" title="写服务端和客户端程序"></a>写服务端和客户端程序</h4><p>1.使用CFree创建server工程和client工程<br>2.搬服务端和客户段代码<br>server.c</p>
