@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>Vlan&amp;生成树&amp;静态路由&amp;RIP</title>
+    <link href="/2022/11/28/p21Vlan&amp;%E7%94%9F%E6%88%90%E6%A0%91&amp;%E9%9D%99%E6%80%81%E8%B7%AF%E7%94%B1&amp;RIP/"/>
+    <url>/2022/11/28/p21Vlan&amp;%E7%94%9F%E6%88%90%E6%A0%91&amp;%E9%9D%99%E6%80%81%E8%B7%AF%E7%94%B1&amp;RIP/</url>
+    
+    <content type="html"><![CDATA[<p>这四个实验只做简要说明，按照实验指导书进行，应该没有太大的问题</p><span id="more"></span><h3 id="Vlan"><a href="#Vlan" class="headerlink" title="Vlan"></a>Vlan</h3><ul><li>按照实验拓扑连接好装置，注意端口的选择</li><li>第一次做ping实验，记得给PC机分配IP地址和默认网关</li><li>三层交换机需要开启路由（ip routing 命令）<br><img src="/img/cnet/Vlan/1.png"><br><img src="/img/cnet/Vlan/2.png"></li></ul><hr><h3 id="生成树配置"><a href="#生成树配置" class="headerlink" title="生成树配置"></a>生成树配置</h3><ul><li>按照实验拓扑连接好装置，注意端口的选择</li><li>照着实验指导书进行就可以了，验收的时候好像让你Ping一下<br><img src="/img/cnet/%E7%94%9F%E6%88%90%E6%A0%91/1.png"></li></ul><hr><h3 id="静态路由"><a href="#静态路由" class="headerlink" title="静态路由"></a>静态路由</h3><ul><li>按照实验拓扑连接好装置，注意端口的选择</li><li>有了前面的经验，然后无脑敲码就欧克😅<br><img src="/img/cnet/%E9%9D%99%E6%80%81%E8%B7%AF%E7%94%B1/1.png"></li></ul><hr><h3 id="RIP"><a href="#RIP" class="headerlink" title="RIP"></a>RIP</h3><ul><li>直接敲码<br><img src="/img/cnet/RIP/1.png"></li></ul><p class="note note-success">author: YaoGuangMing   2022-HDU </p><p class="note note-warning">转载请标明出处！ </p>]]></content>
+    
+    
+    <categories>
+      
+      <category>计算机网络</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>线性代数-复看</title>
     <link href="/2022/11/27/p20%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-%E5%A4%8D%E7%9C%8B/"/>
     <url>/2022/11/27/p20%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-%E5%A4%8D%E7%9C%8B/</url>
