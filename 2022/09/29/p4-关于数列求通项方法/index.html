@@ -69,6 +69,10 @@
 
 
 
+  
+<link rel="stylesheet" href="/css/fluid-extention.css">
+
+
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
@@ -243,7 +247,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          762 字
+          668 字
         
       </span>
     
@@ -254,7 +258,7 @@
         
         
         
-          7 分钟
+          6 分钟
         
       </span>
     
@@ -306,20 +310,27 @@
               <div class="markdown-body">
                 
                 <blockquote>
-<p>数列求通项</p>
-<span id="more"></span>
-</blockquote>
+<p>数列求通项<br><span id="more"></span></p>
 <h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>大学数学很少涉及数列求通项部分的知识，通常是在高中进行考察，但在大学数学竞赛中却时常出现，所以这里简单介绍几种求通项的方法。</p>
+</blockquote>
 <hr>
-<h3 id="累加法"><a href="#累加法" class="headerlink" title="累加法"></a>累加法</h3><p>$$<br>a_{n+1}&#x3D;a_n +f(n)<br>$$<br>根据数列前后项关系有<br>$a_n - a_{n-1}&#x3D;f(n-1)$<br>$a_{n-1} -a_{n-2}&#x3D;f(n-2)$<br>..<br>$a_3 - a_2&#x3D;f(2)$<br>$a_2 -a_1&#x3D;f(1)$<br>左边相加和等于右边相加和，整理可得 $ { a_n }$ 通项公式</p>
+<h3 id="累加法"><a href="#累加法" class="headerlink" title="累加法"></a>累加法</h3><script type="math/tex; mode=display">
+a_{n+1}=a_n +f(n)</script><p>根据数列前后项关系有<br>$a_n - a_{n-1}=f(n-1)$<br>$a_{n-1} -a_{n-2}=f(n-2)$<br>..<br>$a_3 - a_2=f(2)$<br>$a_2 -a_1=f(1)$<br>左边相加和等于右边相加和，整理可得 $ \{ a_n \}$ 通项公式</p>
 <hr>
-<h3 id="累乘法"><a href="#累乘法" class="headerlink" title="累乘法"></a>累乘法</h3><p>$$<br>a_{n+1}&#x3D;a_n f(n)<br>$$<br>根据数列先后项关系有<br>$\frac{a_n}{a_{n-1}}&#x3D;f(n-1)$<br>$\frac{a_{n-1}}{a_{n-2}}&#x3D;f(n-2)$<br>..<br>$\frac{a_3}{a_2}&#x3D;f(2)$<br>$\frac{a_2}{a_1}&#x3D;f(1)$<br>左边相乘等于右边相乘，整理可得 $ { a_n }$ 通项公式</p>
+<h3 id="累乘法"><a href="#累乘法" class="headerlink" title="累乘法"></a>累乘法</h3><script type="math/tex; mode=display">
+a_{n+1}=a_n f(n)</script><p>根据数列先后项关系有<br>$\frac{a_n}{a_{n-1}}=f(n-1)$<br>$\frac{a_{n-1}}{a_{n-2}}=f(n-2)$<br>..<br>$\frac{a_3}{a_2}=f(2)$<br>$\frac{a_2}{a_1}=f(1)$<br>左边相乘等于右边相乘，整理可得 $ \{ a_n \}$ 通项公式</p>
 <hr>
-<h3 id="构造法"><a href="#构造法" class="headerlink" title="构造法"></a>构造法</h3><p>$$<br>a_{n+1}&#x3D;p a_n +q<br>$$<br>通过构造 $a_{n+1}+q&#x3D;p(a_n +q)$ ,然后待定系数，整理可得  $ { a_n }$ 通项公式<br>$$<br>a_{n+1}&#x3D;p a_n + f(n)，<br>a_{n+2}&#x3D;p a_{n+1}+q a_n<br>$$<br>与上面的类似，分别构造 $ { a_n + q f(n) } $，$ { a_{n+1}-q a_n }$，然后待定系数，整理即可</p>
+<h3 id="构造法"><a href="#构造法" class="headerlink" title="构造法"></a>构造法</h3><script type="math/tex; mode=display">
+a_{n+1}=p a_n +q</script><p>通过构造 $a_{n+1}+q=p(a_n +q)$ ,然后待定系数，整理可得  $ \{ a_n \}$ 通项公式</p>
+<script type="math/tex; mode=display">
+a_{n+1}=p a_n + f(n)， 
+a_{n+2}=p a_{n+1}+q a_n</script><p>与上面的类似，分别构造 $ \{ a_n + q f(n) \} $，$ \{ a_{n+1}-q a_n \}$，然后待定系数，整理即可</p>
 <hr>
-<h3 id="取对数"><a href="#取对数" class="headerlink" title="取对数"></a>取对数</h3><p>$$<br>a_{n+1}&#x3D;p a^r<br>$$<br>左右两边同时取对数，再用构造法，整理即可</p>
+<h3 id="取对数"><a href="#取对数" class="headerlink" title="取对数"></a>取对数</h3><script type="math/tex; mode=display">
+a_{n+1}=p a^r</script><p>左右两边同时取对数，再用构造法，整理即可</p>
 <hr>
-<h3 id="取倒数"><a href="#取倒数" class="headerlink" title="取倒数"></a>取倒数</h3><p>$$<br>a_{n+1}&#x3D; \frac{A a_n +B}{C a_n + D}<br>$$<br>这里通过不动点法，再取倒数，由于这个比较复杂，这里插入一张讲解图片和例题辅助理解<br><img src="/img/%E5%88%86%E5%BC%8F%E9%80%9A%E9%A1%B9%E9%A2%98%E4%B8%80.png" srcset="/img/loading.gif" lazyload><br><img src="/img/%E5%88%86%E5%BC%8F%E9%80%9A%E9%A1%B9%E9%A2%98%E4%BA%8C.png" srcset="/img/loading.gif" lazyload></p>
+<h3 id="取倒数"><a href="#取倒数" class="headerlink" title="取倒数"></a>取倒数</h3><script type="math/tex; mode=display">
+a_{n+1}= \frac{A a_n +B}{C a_n + D}</script><p>这里通过不动点法，再取倒数，由于这个比较复杂，这里插入一张讲解图片和例题辅助理解<br><img src="/img/分式通项题一.png" srcset="/img/loading.gif" lazyload alt=""><br><img src="/img/分式通项题二.png" srcset="/img/loading.gif" lazyload alt=""></p>
 <p class="note note-success">author: YaoGuangMing   2022-HDU </p>
 <p class="note note-warning">转载请标明出处！ </p>
                 
@@ -433,6 +444,19 @@
 
 
 
+
+
+  <script>
+  Fluid.utils.createScript('https://lib.baomitu.com/mermaid/8.14.0/mermaid.min.js', function() {
+    mermaid.initialize({"theme":"default"});
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('mermaid' in window) {
+        mermaid.init();
+      }
+    });
+  });
+</script>
 
 
 

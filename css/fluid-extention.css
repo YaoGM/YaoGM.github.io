@@ -1,0 +1,71 @@
+/* 此段代码修改了行高和div溢出隐藏。如果不设置溢出隐藏那么标题的div框会覆盖上下的文字
+   这些文字无法选中，链接无法点开，十分影响使用体验 */
+h1,h2,h3,h4,h5,h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+    overflow: hidden;
+}
+/* 此段代码修改了六个等级标题、多行引用、行内代码的样式，在颜色和行高字号上产生区分 */
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em  ;
+    line-height: 1.1;
+    /* border-bottom: 0px solid #eee; */
+    color: #7e3131;
+}
+h3 {
+    font-size: 1.5em;
+    line-height: 1.1;
+    color: RGB(47,85,151);
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+   color: #777;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+code {
+    background-color: #dddddde6;
+    padding: 0 0px 0 0px;
+    border-radius: 5px;
+    text-indent: 0;
+    color: #e17523;
+}
+strong {
+    color: #be0000;
+    font-weight: bold;
+}
+
+.col-lg-8.nopadding-x-md > .container.nopadding-x-md > #board.py-5 {
+    width: 123%;
+    left: -23%; 
+}
+@media (max-width: 767px) {
+    .col-lg-8.nopadding-x-md > .container.nopadding-x-md > #board.py-5 {
+        width: 100%;
+        left: 0; 
+    }
+}
+@media (max-width: 424px) {
+    .col-lg-8.nopadding-x-md > .container.nopadding-x-md > #board.py-5 {
+        width: 100%;
+        left: 0; 
+    }
+}
