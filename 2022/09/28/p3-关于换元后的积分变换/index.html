@@ -244,7 +244,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.2k 字
+          1.3k 字
         
       </span>
     
@@ -255,7 +255,7 @@
         
         
         
-          10 分钟
+          11 分钟
         
       </span>
     
@@ -307,19 +307,15 @@
               <div class="markdown-body">
                 
                 <blockquote>
-<p>针对换元的积分变换<br><span id="more"></span></p>
-<h2 id="MIT视频讲解"><a href="#MIT视频讲解" class="headerlink" title="MIT视频讲解"></a><a target="_blank" rel="noopener" href="https://m.open.163.com/mobile/free/gb/video?plid=M6TUC9K75&amp;mid=M6TUID0G2">MIT视频讲解</a></h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>在对常见积分 $dxdy$ 进行积分时，但这个积分对x,y往往比较难积，常常我们需要对其进行积分变换，通过换元来进行简化积分，比如常见的换元，$x=r\cos\theta， y=r\sin\theta$，然后通过$dxdy=rdrd\theta$ 进行积分变换，这里的问题是如果我用的是这样一个换元呢，$x=2r\cos\theta，y=r\sin\theta$，这时候 $dxdy$ 和 $drd\theta$ 的关系又是什么呢，本文对这个类换元问题进行解释。</p>
+<p>针对换元的积分变换</p>
+<span id="more"></span>
+<p><a target="_blank" rel="noopener" href="https://m.open.163.com/mobile/free/gb/video?plid=M6TUC9K75&mid=M6TUID0G2">MIT视频讲解</a></p>
 </blockquote>
 <hr>
-<h3 id="一元函数-f-x"><a href="#一元函数-f-x" class="headerlink" title="一元函数 f(x)"></a>一元函数 f(x)</h3><p>我们先对简单的一元函数进行解答，然后逐步深入探讨。我们设 $x=A(u)$，那么我们很自然的可以得到 $dx=A’(u)du$，于是我们得到一元函数的积分变换为</p>
-<script type="math/tex; mode=display">
-\int f(x)dx=\int f(A(u))A'(u)du</script><hr>
-<h3 id="二元函数-f-x-y"><a href="#二元函数-f-x-y" class="headerlink" title="二元函数 f(x,y)"></a>二元函数 f(x,y)</h3><p>我们重点对二元函数进行讨论，我们设 $x=A(u,v)，y=B(u,v)$，我们知道 $\Delta x \Delta y$ 所表达的是在xy坐标下的一个面积，而我们其实想要的是uv坐标下的一个面积，而又因为坐标变换后 $\Delta x \Delta y$并不等于 $\Delta u \Delta v$，比如在xy面相互垂直的两个向量，经过变换后在uv面形成的两个新向量大多数情况下都不垂直了，面积自然也就不相等了，所以我们迫切的需要知道两个坐标变换后的面积关系。面积S可以用 $S=\Delta x \times\Delta y$，<strong>注意，这里的$\Delta x，\Delta y$都看成是向量</strong>，我们根据函数关系可以得到<br>$ \Delta x=\frac{\partial x}{\partial u}\Delta u +\frac{\partial x}{\partial v}\Delta v$<br>$ \Delta y=\frac{\partial y}{\partial u}\Delta u +\frac{\partial y}{\partial v}\Delta v$<br>然后我们对x与y的叉乘进行展开，整理可以得到$ \Delta x\times\Delta y=(x_u y_v - x_v y_u)\Delta u\times\Delta v $，其中xy是相互垂直的，uv是相互垂直的，到这里答案似乎已经呼之欲出了，我们两边取模整理，可以得到二元函数的积分变换为</p>
-<script type="math/tex; mode=display">
-\iint f(x,y)dxdy=\iint f(A,B)|\frac{\partial{(x,y)}}{\partial{(u,v)}}|dudv</script><hr>
-<h3 id="三元函数-f-x-y-z"><a href="#三元函数-f-x-y-z" class="headerlink" title="三元函数 f(x,y,z)"></a>三元函数 f(x,y,z)</h3><p>经过上面的讨论我们易得三元函数的积分变换为</p>
-<script type="math/tex; mode=display">
-\iiint f(x,y,z)dxdydz=\iiint f(A,B,C)|\frac{\partial{(x,y,z)}}{\partial{(u,v,w)}}|dudvdw</script><p class="note note-success">author: YaoGuangMing   2022-HDU </p>
+<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>在对常见积分 $dxdy$ 进行积分时，但这个积分对x,y往往比较难积，常常我们需要对其进行积分变换，通过换元来进行简化积分，比如常见的换元，$x&#x3D;r\cos\theta， y&#x3D;r\sin\theta$，然后通过$dxdy&#x3D;rdrd\theta$ 进行积分变换，这里的问题是如果我用的是这样一个换元呢，$x&#x3D;2r\cos\theta，y&#x3D;r\sin\theta$，这时候 $dxdy$ 和 $drd\theta$ 的关系又是什么呢，本文对这个类换元问题进行解释。</p>
+<hr>
+<h3 id="一元函数-f-x"><a href="#一元函数-f-x" class="headerlink" title="一元函数 f(x)"></a>一元函数 f(x)</h3><h2 id="我们先对简单的一元函数进行解答，然后逐步深入探讨。我们设-x-x3D-A-u-，那么我们很自然的可以得到-dx-x3D-A’-u-du-，于是我们得到一元函数的积分变换为-int-f-x-dx-x3D-int-f-A-u-A’-u-du"><a href="#我们先对简单的一元函数进行解答，然后逐步深入探讨。我们设-x-x3D-A-u-，那么我们很自然的可以得到-dx-x3D-A’-u-du-，于是我们得到一元函数的积分变换为-int-f-x-dx-x3D-int-f-A-u-A’-u-du" class="headerlink" title="我们先对简单的一元函数进行解答，然后逐步深入探讨。我们设 $x&#x3D;A(u)$，那么我们很自然的可以得到 $dx&#x3D;A’(u)du$，于是我们得到一元函数的积分变换为$$\int f(x)dx&#x3D;\int f(A(u))A’(u)du$$"></a>我们先对简单的一元函数进行解答，然后逐步深入探讨。我们设 $x&#x3D;A(u)$，那么我们很自然的可以得到 $dx&#x3D;A’(u)du$，于是我们得到一元函数的积分变换为<br>$$<br>\int f(x)dx&#x3D;\int f(A(u))A’(u)du<br>$$</h2><h3 id="二元函数-f-x-y"><a href="#二元函数-f-x-y" class="headerlink" title="二元函数 f(x,y)"></a>二元函数 f(x,y)</h3><h2 id="我们重点对二元函数进行讨论，我们设-x-x3D-A-u-v-，y-x3D-B-u-v-，我们知道-Delta-x-Delta-y-所表达的是在xy坐标下的一个面积，而我们其实想要的是uv坐标下的一个面积，而又因为坐标变换后-Delta-x-Delta-y-并不等于-Delta-u-Delta-v-，比如在xy面相互垂直的两个向量，经过变换后在uv面形成的两个新向量大多数情况下都不垂直了，面积自然也就不相等了，所以我们迫切的需要知道两个坐标变换后的面积关系。面积S可以用-S-x3D-Delta-x-times-Delta-y-，注意，这里的-Delta-x，-Delta-y-都看成是向量，我们根据函数关系可以得到-Delta-x-x3D-frac-partial-x-partial-u-Delta-u-frac-partial-x-partial-v-Delta-v-Delta-y-x3D-frac-partial-y-partial-u-Delta-u-frac-partial-y-partial-v-Delta-v-然后我们对x与y的叉乘进行展开，整理可以得到-Delta-x-times-Delta-y-x3D-x-u-y-v-x-v-y-u-Delta-u-times-Delta-v-，其中xy是相互垂直的，uv是相互垂直的，到这里答案似乎已经呼之欲出了，我们两边取模整理，可以得到二元函数的积分变换为-iint-f-x-y-dxdy-x3D-iint-f-A-B-frac-partial-x-y-partial-u-v-dudv"><a href="#我们重点对二元函数进行讨论，我们设-x-x3D-A-u-v-，y-x3D-B-u-v-，我们知道-Delta-x-Delta-y-所表达的是在xy坐标下的一个面积，而我们其实想要的是uv坐标下的一个面积，而又因为坐标变换后-Delta-x-Delta-y-并不等于-Delta-u-Delta-v-，比如在xy面相互垂直的两个向量，经过变换后在uv面形成的两个新向量大多数情况下都不垂直了，面积自然也就不相等了，所以我们迫切的需要知道两个坐标变换后的面积关系。面积S可以用-S-x3D-Delta-x-times-Delta-y-，注意，这里的-Delta-x，-Delta-y-都看成是向量，我们根据函数关系可以得到-Delta-x-x3D-frac-partial-x-partial-u-Delta-u-frac-partial-x-partial-v-Delta-v-Delta-y-x3D-frac-partial-y-partial-u-Delta-u-frac-partial-y-partial-v-Delta-v-然后我们对x与y的叉乘进行展开，整理可以得到-Delta-x-times-Delta-y-x3D-x-u-y-v-x-v-y-u-Delta-u-times-Delta-v-，其中xy是相互垂直的，uv是相互垂直的，到这里答案似乎已经呼之欲出了，我们两边取模整理，可以得到二元函数的积分变换为-iint-f-x-y-dxdy-x3D-iint-f-A-B-frac-partial-x-y-partial-u-v-dudv" class="headerlink" title="我们重点对二元函数进行讨论，我们设 $x&#x3D;A(u,v)，y&#x3D;B(u,v)$，我们知道 $\Delta x \Delta y$ 所表达的是在xy坐标下的一个面积，而我们其实想要的是uv坐标下的一个面积，而又因为坐标变换后 $\Delta x \Delta y$并不等于 $\Delta u \Delta v$，比如在xy面相互垂直的两个向量，经过变换后在uv面形成的两个新向量大多数情况下都不垂直了，面积自然也就不相等了，所以我们迫切的需要知道两个坐标变换后的面积关系。面积S可以用 $S&#x3D;\Delta x \times\Delta y$，注意，这里的$\Delta x，\Delta y$都看成是向量，我们根据函数关系可以得到$ \Delta x&#x3D;\frac{\partial x}{\partial u}\Delta u +\frac{\partial x}{\partial v}\Delta v$$ \Delta y&#x3D;\frac{\partial y}{\partial u}\Delta u +\frac{\partial y}{\partial v}\Delta v$然后我们对x与y的叉乘进行展开，整理可以得到$ \Delta x\times\Delta y&#x3D;(x_u y_v - x_v y_u)\Delta u\times\Delta v $，其中xy是相互垂直的，uv是相互垂直的，到这里答案似乎已经呼之欲出了，我们两边取模整理，可以得到二元函数的积分变换为$$\iint f(x,y)dxdy&#x3D;\iint f(A,B)|\frac{\partial{(x,y)}}{\partial{(u,v)}}|dudv$$"></a>我们重点对二元函数进行讨论，我们设 $x&#x3D;A(u,v)，y&#x3D;B(u,v)$，我们知道 $\Delta x \Delta y$ 所表达的是在xy坐标下的一个面积，而我们其实想要的是uv坐标下的一个面积，而又因为坐标变换后 $\Delta x \Delta y$并不等于 $\Delta u \Delta v$，比如在xy面相互垂直的两个向量，经过变换后在uv面形成的两个新向量大多数情况下都不垂直了，面积自然也就不相等了，所以我们迫切的需要知道两个坐标变换后的面积关系。面积S可以用 $S&#x3D;\Delta x \times\Delta y$，<strong>注意，这里的$\Delta x，\Delta y$都看成是向量</strong>，我们根据函数关系可以得到<br>$ \Delta x&#x3D;\frac{\partial x}{\partial u}\Delta u +\frac{\partial x}{\partial v}\Delta v$<br>$ \Delta y&#x3D;\frac{\partial y}{\partial u}\Delta u +\frac{\partial y}{\partial v}\Delta v$<br>然后我们对x与y的叉乘进行展开，整理可以得到$ \Delta x\times\Delta y&#x3D;(x_u y_v - x_v y_u)\Delta u\times\Delta v $，其中xy是相互垂直的，uv是相互垂直的，到这里答案似乎已经呼之欲出了，我们两边取模整理，可以得到二元函数的积分变换为<br>$$<br>\iint f(x,y)dxdy&#x3D;\iint f(A,B)|\frac{\partial{(x,y)}}{\partial{(u,v)}}|dudv<br>$$</h2><h3 id="三元函数-f-x-y-z"><a href="#三元函数-f-x-y-z" class="headerlink" title="三元函数 f(x,y,z)"></a>三元函数 f(x,y,z)</h3><p>经过上面的讨论我们易得三元函数的积分变换为<br>$$<br>\iiint f(x,y,z)dxdydz&#x3D;\iiint f(A,B,C)|\frac{\partial{(x,y,z)}}{\partial{(u,v,w)}}|dudvdw<br>$$</p>
+<p class="note note-success">author: YaoGuangMing   2022-HDU </p>
 <p class="note note-warning">转载请标明出处！ </p>
                 
               </div>
@@ -699,4 +695,4 @@
   <noscript>
     <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
   </noscript>
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":0.75,"jsonPath":"/live2dw/assets/sagiri.model.json"},"display":{"superSample":2,"width":250,"height":800,"position":"right","hOffset":10,"vOffset":-300},"mobile":{"show":true,"scale":0.5},"dialog":{"enable":true,"hitokoto":true},"log":false});</script><script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
