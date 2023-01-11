@@ -190,7 +190,7 @@
           
             <li class="nav-item">
               <a class="nav-link" href="/yHDU/">
-                
+                <i class="iconfont icon-note"></i>
                 grade
               </a>
             </li>
@@ -288,12 +288,39 @@
     </div>
   </div>
 </div>
-
+<div  style="background: url('/img/%E6%96%87%E7%AB%A0%E9%A6%96.jpg') no-repeat center center; background-size: cover;">
+</div>
 </div>
 
+<style type="text/css">
+        table
+        {
+            border-collapse: collapse;
+            margin: 0 auto;
+            text-align: center;
+        }
+        table td, table th
+        {
+            border: 1px solid #cad9ea;
+            height: 30px;
+        }
+        table thead th
+        {
+            background-color: #CCE8EB;
+            width: 100px;
+        }
+        table tr:nth-child(odd)
+        {
+            background: #00ffff;
+        }
+        table tr:nth-child(even)
+        {
+            background: #f0ffff;
+        }
+    </style>
   </header>
 
-  <main>
+  <main style="background: url('/img/th.gif') no-repeat center center; background-size: cover;">
     
       
 
@@ -492,13 +519,43 @@
 
   <footer>
     <div class="footer-inner">
-  
     <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    <div>
+      <span id="timeDate">载入天数...</span>
+      <span id="times">载入时分秒...</span>
+      <script>
+      var now = new Date();
+      function createtime(){
+          var grt= new Date("09/26/2022 22:00:00");
+          now.setTime(now.getTime()+250);
+          days = (now - grt ) / 1000 / 60 / 60 / 24;
+          dnum = Math.floor(days);
+          hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum);
+          hnum = Math.floor(hours);
+          if(String(hnum).length ==1 ){
+              hnum = "0" + hnum;
+          }
+          minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+          mnum = Math.floor(minutes);
+          if(String(mnum).length ==1 ){
+                    mnum = "0" + mnum;
+          }
+          seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+          snum = Math.round(seconds);
+          if(String(snum).length ==1 ){
+                    snum = "0" + snum;
+          }
+          document.getElementById("timeDate").innerHTML = "🚀 &nbsp"+"已经运行："+dnum+"&nbsp天";
+          document.getElementById("times").innerHTML = hnum + "&nbsp小时&nbsp" + mnum + "&nbsp分&nbsp" + snum + "&nbsp秒";
+      } 
+      setInterval("createtime()",250);
+      </script>
     </div>
+     <div>
+         <span>HDU  |   杭州电子科技大学</span>
+  </div>
   
-  
-  
+    <span>❤YGM❤</span>
   
 </div>
 
@@ -703,4 +760,4 @@
   <noscript>
     <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
   </noscript>
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":0.75,"jsonPath":"/live2dw/assets/sagiri.model.json"},"display":{"superSample":2,"width":250,"height":800,"position":"right","hOffset":10,"vOffset":-300},"mobile":{"show":true,"scale":0.5},"dialog":{"enable":true,"hitokoto":true},"log":false});</script><script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>

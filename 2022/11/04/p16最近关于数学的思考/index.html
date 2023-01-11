@@ -23,10 +23,20 @@
 <meta property="og:site_name" content="blog">
 <meta property="og:description" content="一些小想法">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/16_1.jpg">
+<meta property="og:image" content="http://example.com/img/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/16_2.jpg">
+<meta property="og:image" content="http://example.com/img/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/16_3.jpg">
+<meta property="og:image" content="http://example.com/img/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/16_4.jpg">
+<meta property="og:image" content="http://example.com/img/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/16_5.jpg">
+<meta property="og:image" content="http://example.com/img/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/16_6.jpg">
+<meta property="og:image" content="http://example.com/img/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/16_7.jpg">
+<meta property="og:image" content="http://example.com/img/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/16_8.jpg">
+<meta property="og:image" content="http://example.com/img/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/16_9.jpg">
 <meta property="article:published_time" content="2022-11-04T11:37:24.000Z">
-<meta property="article:modified_time" content="2022-11-09T15:03:25.563Z">
+<meta property="article:modified_time" content="2023-01-11T02:54:21.181Z">
 <meta property="article:author" content="YaoGuangMing">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/img/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/16_1.jpg">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -182,7 +192,7 @@
           
             <li class="nav-item">
               <a class="nav-link" href="/yHDU/">
-                
+                <i class="iconfont icon-note"></i>
                 grade
               </a>
             </li>
@@ -244,7 +254,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.1k 字
+          95 字
         
       </span>
     
@@ -255,7 +265,7 @@
         
         
         
-          18 分钟
+          1 分钟
         
       </span>
     
@@ -280,12 +290,39 @@
     </div>
   </div>
 </div>
-
+<div  style="background: url('/img/%E6%96%87%E7%AB%A0%E9%A6%96.jpg') no-repeat center center; background-size: cover;">
+</div>
 </div>
 
+<style type="text/css">
+        table
+        {
+            border-collapse: collapse;
+            margin: 0 auto;
+            text-align: center;
+        }
+        table td, table th
+        {
+            border: 1px solid #cad9ea;
+            height: 30px;
+        }
+        table thead th
+        {
+            background-color: #CCE8EB;
+            width: 100px;
+        }
+        table tr:nth-child(odd)
+        {
+            background: #00ffff;
+        }
+        table tr:nth-child(even)
+        {
+            background: #f0ffff;
+        }
+    </style>
   </header>
 
-  <main>
+  <main style="background: url('/img/th.gif') no-repeat center center; background-size: cover;">
     
       
 
@@ -310,15 +347,7 @@
 <span id="more"></span>
 <h3 id="函数端点值"><a href="#函数端点值" class="headerlink" title="函数端点值"></a>函数端点值</h3><p>题目中抽象函数给出的特定的端点值，是构造函数或者进行放缩的突破点也是思考点，特别要注意0，1的特殊性</p>
 <hr>
-<h3 id="柯西积分不等式"><a href="#柯西积分不等式" class="headerlink" title="柯西积分不等式"></a>柯西积分不等式</h3><p>若函数f,g连续，则有<br>$$<br>[\int_a^b f(x)g(x) dx]^2 \leq \int_a^b f^2 (x)dx \int_a^b g^2 (x)dx<br>$$<br>这个不等式在比赛中也比较重要，这里给出一道经典的例题相对综合。<br><strong>设</strong> f’(x) 在定义域R内连续，f(0)&#x3D;0，f(1)&#x3D;0，<strong>证明</strong>：<br>$$<br>[\int_0^1 f(x)dx]^2 \leq \frac{1}{12} \int_0^1 f’(x)^2 dx<br>$$<br><strong>（提示：注意端点值哦）</strong></p>
-<hr>
-<h3 id="函数的单调性"><a href="#函数的单调性" class="headerlink" title="函数的单调性"></a>函数的单调性</h3><p>函数的单调性在不等式和积分放缩中有着很大的用处，先介绍一个不等式<strong>切比雪夫不等式</strong>：<br>若 f(x)，g(x)单调性相同，则有:<br>$$<br>\int_a^b f(x)dx \int_a^b g(x)dx \leq (b-a)\int_a^b f(x)g(x)dx<br>$$<br>证明过程主要利用两个函数的单调性构造不等式再两边积分，具体证明读者可自行查阅。<br>在求积分时可以通过单调性进行放缩，其中求调和级数的发散值，就体现了这一思想<br>$$<br>\ln(n+1) &lt; \sum_{n&#x3D;1}^\infty \frac{1}{n} &lt; \ln{n} +1<br>$$</p>
-<hr>
-<h3 id="函数的凸性与凹性"><a href="#函数的凸性与凹性" class="headerlink" title="函数的凸性与凹性"></a>函数的凸性与凹性</h3><p>体现函数凹凸性的地方是泰勒不等式，假设 f(x) 是个凸函数，即 f’’(x) &gt;&#x3D;0 则有泰勒展开：<br>$$<br>f(x)&#x3D;f(x_0)+f’(x_0)(x-x_0) + f’’(\xi)(x-x_0)^2<br>$$<br>于是有：<br>$$<br>f(x) \geq f(x_0)+f’(x_0)(x-x_0)<br>$$<br>不等式两边积分有：<br>$$<br>\int_a^b f(x)dx \geq \int_a^b f(x_0)dx+f’(x_0)\int_a^b (x-x_0)dx<br>$$<br>这里给出一个例子也是竞赛真题<br>证明：<br>$$<br>\int_0^1 \ln f(x)dx \leq \ln{\int_0^1 f(x)dx}<br>$$<br>比较典型的一个体现函数凹凸性的是<strong>琴生不等式</strong>，也可以用泰勒不等式证明</p>
-<hr>
-<h3 id="正交变换"><a href="#正交变换" class="headerlink" title="正交变换"></a>正交变换</h3><p>正交变换的雅可比行列式为1，且积分区域保持不变，用他进行换元可解决一些重积分的难题，一个比较好应用是<strong>possion公式</strong>：<br>$$<br>\iint_{x^2+y^2+z^2&#x3D;1} f(ax+by+cz)dS &#x3D;2\pi \int_{-1}^1 f(u\sqrt{a^2+b^2+c^2})du<br>$$</p>
-<hr>
-<h3 id="一些偏小众的解法和结论"><a href="#一些偏小众的解法和结论" class="headerlink" title="一些偏小众的解法和结论"></a>一些偏小众的解法和结论</h3><p>1.计算积分<br>$$<br>\int \sqrt{2+\sqrt{2+\sqrt{2+\sqrt{···+\sqrt{2+x}}}}} dx(\ast)<br>$$<br>解：令x&#x3D;2cost ,于是有<br>$$<br>\sqrt{2+x}&#x3D;2\cos\frac{t}{2}<br>$$<br>依次合并，可以得到<br>$$<br>(\ast) &#x3D; \int -4\sin t \cos\frac{t}{2^n}dt<br>$$<br>运用积化和差公式，可得出结果<br>2.f(x)单调，证<br>$$<br>\lim_{h\rightarrow 0^+} h\sum_{n&#x3D;1}^{+\infty}f(nh)&#x3D;\int_0^{+\infty}f(x)dx (\ast)<br>$$<br>解：假设f(x)单调有<br>$$<br>\sum_{n&#x3D;1}^{+\infty}\int_{(n-1)h}^{nh}f(x) dx\leq \sum_{n&#x3D;1}^{+\infty}\int_{(n-1)h}^{nh} f(nh)dx<br>$$<br>$$<br>\sum_{n&#x3D;1}^{+\infty}\int_{nh}^{(n+1)h}f(nh) dx\leq \sum_{n&#x3D;1}^{+\infty}\int_{nh}^{(n+1)h} f(x)dx<br>$$<br>所以有<br>$$<br>\int_0^{+\infty}f(x)dx \leq (\ast)\leq \int_h^{+\infty}f(x)dx<br>$$<br>3.求积分<br>$$<br>\int_0^1 (1+x^+x^2+x^3+···+x^{n-1})^2(1+4x+7x^2+···+(3n-2)x^{n-1})dx<br>$$<br>解：换元<br>$$<br>x&#x3D;t^3<br>$$<br>4.求证<br>$$<br>\int_0^1 x^n f(x)dx&#x3D;0<br>$$<br>若f(x)连续，求证：<br>$$<br>n\int_0^1 x^n f(x)dx&#x3D;f(1)<br>$$<br>5.求证<br>$$<br>\int_{-\infty}^{+\infty} f(x-\frac{a}{x})dx&#x3D;\int_{-\infty}^{+\infty}f(x)dx<br>$$<br>解：换元<br>$$<br>x-\frac{a}{x}&#x3D;t<br>$$<br>6.求证<br>$$<br>\int_0^1 f(x^n)dx&#x3D;f(0)<br>$$<br>解：泰勒展开<br>7.求<br>$$<br>\lim_{n\rightarrow \infty} \int \frac{d^n(\frac{f(x)-f(a)}{x-a})}{dx^n}&#x3D;\frac{f^{(n+1)}(a)}{n+1}<br>$$<br>8.求<br>$$<br>\lim \sqrt[n]{\int_a^b f^n (x)dx}&#x3D;f_{max}(x)<br>$$</p>
+<p><img src="/img/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/16_1.jpg" srcset="/img/loading.gif" lazyload><br><img src="/img/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/16_2.jpg" srcset="/img/loading.gif" lazyload><br><img src="/img/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/16_3.jpg" srcset="/img/loading.gif" lazyload><br><img src="/img/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/16_4.jpg" srcset="/img/loading.gif" lazyload><br><img src="/img/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/16_5.jpg" srcset="/img/loading.gif" lazyload><br><img src="/img/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/16_6.jpg" srcset="/img/loading.gif" lazyload><br><img src="/img/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/16_7.jpg" srcset="/img/loading.gif" lazyload><br><img src="/img/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/16_8.jpg" srcset="/img/loading.gif" lazyload><br><img src="/img/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/16_9.jpg" srcset="/img/loading.gif" lazyload></p>
 <p class="note note-success">author: YaoGuangMing   2022-HDU </p>
 <p class="note note-warning">转载请标明出处！ </p>
                 
@@ -488,13 +517,43 @@
 
   <footer>
     <div class="footer-inner">
-  
     <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    <div>
+      <span id="timeDate">载入天数...</span>
+      <span id="times">载入时分秒...</span>
+      <script>
+      var now = new Date();
+      function createtime(){
+          var grt= new Date("09/26/2022 22:00:00");
+          now.setTime(now.getTime()+250);
+          days = (now - grt ) / 1000 / 60 / 60 / 24;
+          dnum = Math.floor(days);
+          hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum);
+          hnum = Math.floor(hours);
+          if(String(hnum).length ==1 ){
+              hnum = "0" + hnum;
+          }
+          minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+          mnum = Math.floor(minutes);
+          if(String(mnum).length ==1 ){
+                    mnum = "0" + mnum;
+          }
+          seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+          snum = Math.round(seconds);
+          if(String(snum).length ==1 ){
+                    snum = "0" + snum;
+          }
+          document.getElementById("timeDate").innerHTML = "🚀 &nbsp"+"已经运行："+dnum+"&nbsp天";
+          document.getElementById("times").innerHTML = hnum + "&nbsp小时&nbsp" + mnum + "&nbsp分&nbsp" + snum + "&nbsp秒";
+      } 
+      setInterval("createtime()",250);
+      </script>
     </div>
+     <div>
+         <span>HDU  |   杭州电子科技大学</span>
+  </div>
   
-  
-  
+    <span>❤YGM❤</span>
   
 </div>
 
@@ -699,4 +758,4 @@
   <noscript>
     <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
   </noscript>
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":0.75,"jsonPath":"/live2dw/assets/sagiri.model.json"},"display":{"superSample":2,"width":250,"height":800,"position":"right","hOffset":10,"vOffset":-300},"mobile":{"show":true,"scale":0.5},"dialog":{"enable":true,"hitokoto":true},"log":false});</script><script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
