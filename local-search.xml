@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>math</title>
+    <link href="/2023/03/05/math/"/>
+    <url>/2023/03/05/math/</url>
+    
+    <content type="html"><![CDATA[<p>math</p><span id="more"></span><script type="text/x-mathjax-config;executed=true">        window.MathJax.Hub.Config({            showProcessingMessages: false, //关闭js加载过程信息            messageStyle: "none", //不显示信息            jax: ["input/TeX", "output/HTML-CSS"],            tex2jax: {                inlineMath: [["$", "$"], ["\\(", "\\)"]], //行内公式选择符                displayMath: [["$$", "$$"], ["\\[", "\\]"]], //段内公式选择符                skipTags: ["script", "noscript", "style", "textarea", "pre", "code", "a"] //避开某些标签            },            "HTML-CSS": {                availableFonts: ["STIX", "TeX"], //可选字体                showMathMenu: false //关闭右击菜单显示            }        });        //下面第三个参数可以不写，默认对整个html内的latex进行翻译        window.MathJax.Hub.Queue(["Typeset", MathJax.Hub,document.getElementsByClassName("ck-content")]);</script><p>$$<br>\int_a^b \tag{1.2}<br>$$<br>$\lim_1$</p><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML" async></script><p class="note note-success">author: YaoGuangMing 2023-HDU</p><p class="note note-warning">转载请标明出处！</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>高等数学</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>操作系统实验五文件系统</title>
     <link href="/2022/12/16/p4/"/>
     <url>/2022/12/16/p4/</url>
