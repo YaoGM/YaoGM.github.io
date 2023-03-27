@@ -16,21 +16,23 @@
   <meta name="author" content="YaoGuangMing">
   <meta name="keywords" content="">
   
-    <meta name="description" content="实验二（题目五）">
+    <meta name="description" content="高数下">
 <meta property="og:type" content="article">
-<meta property="og:title" content="操作系统实验二">
-<meta property="og:url" content="http://example.com/2022/10/13/p2/index.html">
+<meta property="og:title" content="高数重点总结（下册）">
+<meta property="og:url" content="http://example.com/2023/03/12/p7%E9%AB%98%E6%95%B0%E9%87%8D%E7%82%B9%E6%80%BB%E7%BB%93%EF%BC%88%E4%B8%8B%E5%86%8C%EF%BC%89/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="实验二（题目五）">
+<meta property="og:description" content="高数下">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-10-13T10:57:53.000Z">
-<meta property="article:modified_time" content="2023-02-28T11:25:47.503Z">
+<meta property="og:image" content="http://example.com/img/%E5%88%BB%E6%99%B4.jpg">
+<meta property="article:published_time" content="2023-03-12T02:31:22.000Z">
+<meta property="article:modified_time" content="2023-03-27T14:28:56.234Z">
 <meta property="article:author" content="YaoGuangMing">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/img/%E5%88%BB%E6%99%B4.jpg">
   
   
   
-  <title>操作系统实验二 - Hexo</title>
+  <title>高数重点总结（下册） - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -246,7 +248,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="操作系统实验二"></span>
+            <span id="subtitle" data-typed-text="高数重点总结（下册）"></span>
           
         </div>
 
@@ -262,8 +264,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-10-13 18:57" pubdate>
-          2022年10月13日 晚上
+        <time datetime="2023-03-12 10:31" pubdate>
+          2023年3月12日 上午
         </time>
       </span>
     
@@ -274,7 +276,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.5k 字
+          50 字
         
       </span>
     
@@ -285,7 +287,7 @@
         
         
         
-          13 分钟
+          1 分钟
         
       </span>
     
@@ -323,30 +325,24 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">操作系统实验二</h1>
+            <h1 style="display: none">高数重点总结（下册）</h1>
             
             
               <div class="markdown-body">
                 
-                <p>实验二（题目五）</p>
+                <p>高数下</p>
 <span id="more"></span>
 
-<h3 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h3><ul>
-<li>题目内容：改变主机名称为自定义字符串</li>
-<li>思路：通过系统提供的更改文件的系统调用，对&#x2F;etc&#x2F;hostname进行更改</li>
-<li>平台：华为云ubuntu20.04操作系统</li>
-<li>注意：内核编译完成后，服务器重启之后一定要用VCN登录，在VCN上再reboot一下,会出现一个选择界面，选第二个就可以看到你编译的内核了，cloud重启登录内核是加不进去的</li>
-<li>命令：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs bash">wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.14.295.tar.xz<br>xz -d linux-4.14.295.tar.xz <br>tar -xvf linux-4.14.295.tar <br>vim <span class="hljs-built_in">arch</span>/x86/entry/syscalls/syscall_64.tbl    //添加调用号<br>vim include/linux/syscalls.h    //函数声明<br>vim kernel/sys.c    //函数实现<br>apt-get install libncurses5-dev<br>apt-get install libssl-dev<br>apt-get install flex<br>apt-get install bison<br>make mrproper<br>make menuconfig<br>make -j128<br>make -j128  modules<br>make modules_install<br>make install<br>reboot<br></code></pre></td></tr></table></figure>
-编译过程中好像有个关于debian….的错误，笔者是输入 scripts&#x2F;config –set-str SYSTEM_TRUSTED_KEYS “” 解决的 ，还有就是哪个bzimg的错误（编译的时候先把服务器配置改成128核的CPU，然后就很快乐）</li>
-</ul>
-<hr>
-<h3 id="调用函数代码"><a href="#调用函数代码" class="headerlink" title="调用函数代码"></a>调用函数代码</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs c">SYSCALL_DEFINE2(ysethostname, <span class="hljs-type">char</span> __user*, name,<span class="hljs-type">int</span>, len)<br>&#123;<br>        <span class="hljs-type">int</span> errno;<br>        <span class="hljs-type">char</span> tmp[<span class="hljs-number">64</span>]=&#123;<span class="hljs-number">0</span>&#125;;<br>        <span class="hljs-keyword">if</span>(len &lt;<span class="hljs-number">0</span> || len&gt;<span class="hljs-number">64</span>)<br>                <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>;<br>        errno=<span class="hljs-number">0</span>;<br>        <span class="hljs-type">mm_segment_t</span> fs;<br>        fs=get_fs();<br>        set_fs(get_ds());<br>        <span class="hljs-keyword">if</span>(!copy_from_user(tmp,name,len))&#123;<br>                <span class="hljs-type">int</span> fhost=sys_open(<span class="hljs-string">&quot;/etc/hostname&quot;</span>, O_WRONLY | O_RDONLY,<span class="hljs-number">0</span>);<br>                sys_write(fhost,tmp,<span class="hljs-number">64</span>);<br>                errno=<span class="hljs-number">1</span>;<br>        &#125;<br>        sys_close(fhost);<br>        set_fs(fs);<br>        <span class="hljs-keyword">return</span> errno;<br>&#125;<br></code></pre></td></tr></table></figure>
+<a href="/mysrc/math/p7高数重点总结（下册）.pdf">
 
-<hr>
-<h3 id="测试调用C代码"><a href="#测试调用C代码" class="headerlink" title="测试调用C代码"></a>测试调用C代码</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;unistd.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;sys/syscall.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;string.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span><br>&#123;<br>        <span class="hljs-type">char</span> name[<span class="hljs-number">64</span>];<br>        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;input name:&quot;</span>);<br>        <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%s&quot;</span>,name);<br>        <span class="hljs-type">int</span> len=<span class="hljs-built_in">strlen</span>(name);<br>        syscall(<span class="hljs-number">334</span>,name,len);<br>        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;success\n&quot;</span>);<br>        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>[高数重点总结（下册）]</p>
+</a>
+
+<br>
+<br>
 
 
-<p class="note note-success">author: YaoGuangMing 2022-HDU</p>
+<p class="note note-success">author: YaoGuangMing 2023-HDU</p>
 <p class="note note-warning">转载请标明出处！</p>
                 
               </div>
@@ -365,7 +361,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="category-chain-item">操作系统</a>
+  <a href="/categories/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" class="category-chain-item">高等数学</a>
   
   
 
@@ -387,18 +383,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/11/11/p5/" title="计网实验ARP">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">计网实验ARP</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/10/02/p1/" title="操作系统实验一(题目1)">
-                        <span class="hidden-mobile">操作系统实验一(题目1)</span>
+                      <a href="/2023/03/05/p6%E9%AB%98%E6%95%B0%E9%87%8D%E7%82%B9%E6%80%BB%E7%BB%93%EF%BC%88%E4%B8%8A%E5%86%8C%EF%BC%89/" title="高数重点总结（上册）">
+                        <span class="hidden-mobile">高数重点总结（上册）</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
