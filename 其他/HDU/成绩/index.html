@@ -79,12 +79,11 @@
 
 
   
-
-
+<link type="text/css" rel="stylesheet" href="/css/aos.css" />
 <meta name="generator" content="Hexo 5.4.2"></head>
 
 
-<body>
+<body >
   
 
   <header>
@@ -538,6 +537,9 @@
   </footer>
 
   <!-- Scripts -->
+   <script type="text/javascript" src="/js/aos.js"></script>
+   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script> 
+   <script type="text/javascript">AOS.init();</script>
    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
    <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
    <script type="text/javascript" src="/js/fireworks.js"></script>
@@ -545,6 +547,27 @@
    <script type="text/javascript"
 color="0,0,0" opacity='0.7' zIndex="-1" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
 </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML" async></script>
+<script type="text/x-mathjax-config;executed=true">
+        window.MathJax.Hub.Config({
+            showProcessingMessages: false, //关闭js加载过程信息
+            messageStyle: "none", //不显示信息
+            jax: ["input/TeX", "output/HTML-CSS"],
+            tex2jax: {
+	inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [["$$", "$$"], ["\\[", "\\]"]], //段内公式选择符
+                skipTags: ["script", "noscript", "style", "textarea", "pre", "code", "a"] //避开某些标签
+            },
+            "HTML-CSS": {
+                availableFonts: ["STIX", "TeX"], //可选字体
+                showMathMenu: false //关闭右击菜单显示
+            }
+        });
+        //下面第三个参数可以不写，默认对整个html内的latex进行翻译
+        window.MathJax.Hub.Queue(["Typeset", MathJax.Hub,document.getElementsByClassName("ck-content")]);
+</script>
+
   
   <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
   <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />

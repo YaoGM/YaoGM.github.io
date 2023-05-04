@@ -75,12 +75,11 @@
 
 
   
-
-
+<link type="text/css" rel="stylesheet" href="/css/aos.css" />
 <meta name="generator" content="Hexo 5.4.2"></head>
 
 
-<body>
+<body >
   
 
   <header>
@@ -304,22 +303,22 @@
     
     <div class="category row nomargin-x">
       <a class="category-item collapsed
-          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="高等数学"
-        id="heading-122ca83f4d8d870eaef5bc9a3e517f1a" role="tab" data-toggle="collapse" href="#collapse-122ca83f4d8d870eaef5bc9a3e517f1a"
+          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="数海漫步"
+        id="heading-90b96e93e05dff9b67c72858901476b7" role="tab" data-toggle="collapse" href="#collapse-90b96e93e05dff9b67c72858901476b7"
         aria-expanded="false"
       >
-        高等数学
+        数海漫步
         <span class="list-group-count"></span>
         <i class="iconfont icon-arrowright"></i>
       </a>
       
-        <a href="/categories/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" class="category-count col-2 col-md-1 col-xm-1">
+        <a href="/categories/%E6%95%B0%E6%B5%B7%E6%BC%AB%E6%AD%A5/" class="category-count col-2 col-md-1 col-xm-1">
           <i class="iconfont icon-articles"></i>
-          <span>2</span>
+          <span>1</span>
         </a>
       
-      <div class="category-collapse collapse " id="collapse-122ca83f4d8d870eaef5bc9a3e517f1a"
-           role="tabpanel" aria-labelledby="heading-122ca83f4d8d870eaef5bc9a3e517f1a">
+      <div class="category-collapse collapse " id="collapse-90b96e93e05dff9b67c72858901476b7"
+           role="tabpanel" aria-labelledby="heading-90b96e93e05dff9b67c72858901476b7">
         
         
           
@@ -328,19 +327,10 @@
     
       
       
-        <a href="/2023/03/12/p7%E9%AB%98%E6%95%B0%E9%87%8D%E7%82%B9%E6%80%BB%E7%BB%93%EF%BC%88%E4%B8%8B%E5%86%8C%EF%BC%89/" title="高数重点总结（下册）"
+        <a href="/2023/03/05/1%E6%95%B0%E7%BD%AE%E9%A1%B6/" title="数学笔记"
            class="list-group-item list-group-item-action
            ">
-          <span class="category-post">高数重点总结（下册）</span>
-        </a>
-      
-    
-      
-      
-        <a href="/2023/03/05/p6%E9%AB%98%E6%95%B0%E9%87%8D%E7%82%B9%E6%80%BB%E7%BB%93%EF%BC%88%E4%B8%8A%E5%86%8C%EF%BC%89/" title="高数重点总结（上册）"
-           class="list-group-item list-group-item-action
-           ">
-          <span class="category-post">高数重点总结（上册）</span>
+          <span class="category-post">数学笔记</span>
         </a>
       
     
@@ -518,6 +508,9 @@
   </footer>
 
   <!-- Scripts -->
+   <script type="text/javascript" src="/js/aos.js"></script>
+   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script> 
+   <script type="text/javascript">AOS.init();</script>
    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
    <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
    <script type="text/javascript" src="/js/fireworks.js"></script>
@@ -525,6 +518,27 @@
    <script type="text/javascript"
 color="0,0,0" opacity='0.7' zIndex="-1" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
 </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML" async></script>
+<script type="text/x-mathjax-config;executed=true">
+        window.MathJax.Hub.Config({
+            showProcessingMessages: false, //关闭js加载过程信息
+            messageStyle: "none", //不显示信息
+            jax: ["input/TeX", "output/HTML-CSS"],
+            tex2jax: {
+	inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [["$$", "$$"], ["\\[", "\\]"]], //段内公式选择符
+                skipTags: ["script", "noscript", "style", "textarea", "pre", "code", "a"] //避开某些标签
+            },
+            "HTML-CSS": {
+                availableFonts: ["STIX", "TeX"], //可选字体
+                showMathMenu: false //关闭右击菜单显示
+            }
+        });
+        //下面第三个参数可以不写，默认对整个html内的latex进行翻译
+        window.MathJax.Hub.Queue(["Typeset", MathJax.Hub,document.getElementsByClassName("ck-content")]);
+</script>
+
   
   <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
   <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
