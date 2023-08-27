@@ -1,0 +1,48 @@
+
+.dt{
+display: flex;
+flex-direction:column;
+position:relative;
+margin-left:15%;
+margin-right:15%;
+margin-bottom: 30px;
+top:-30px;
+background:white;
+padding:40px; 
+border-radius:16px; 
+box-shadow:0 12px 15px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.dt-before{
+display:flex;
+}
+.be-img{
+width:75px;
+height:75px;
+border-radius:50%;
+background: url(/img/touxiang.jpg); 
+background-size: cover;
+}
+.be-title{
+display: flex;
+flex-direction:column;
+padding:10px;
+}
+.author{
+font-size:x-large;
+}
+.time{
+font-size: smaller;
+font-color: grey;
+}
+.dt-after{
+}
+.dt-img{
+display: flex;
+flex-wrap: wrap;
+}
+.dt-img img{
+   width: 200px;
+   height: 160px;
+   margin: 10px;
+}
