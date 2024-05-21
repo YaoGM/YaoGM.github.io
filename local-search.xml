@@ -4,73 +4,16 @@
   
   
   <entry>
-    <title>数据结构（计划更新）</title>
-    <link href="/2023/06/22/p7%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    <url>/2023/06/22/p7%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
+    <title>毕业设计</title>
+    <link href="/2024/05/19/p6%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1/"/>
+    <url>/2024/05/19/p6%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1/</url>
     
-    <content type="html"><![CDATA[<span id="more"></span><p class="note note-success">author: YaoGuangMing 2023-HDU</p><p class="note note-warning">转载请标明出处！</p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-    
-    
-    <categories>
-      
-      <category>数据结构</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>操作系统（计划更新）</title>
-    <link href="/2023/06/22/p8%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    <url>/2023/06/22/p8%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</url>
-    
-    <content type="html"><![CDATA[<span id="more"></span><p class="note note-success">author: YaoGuangMing 2023-HDU</p><p class="note note-warning">转载请标明出处！</p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    <content type="html"><![CDATA[<p>出租车订单分配及路线规划</p><span id="more"></span><p>123</p><p class="note note-success">author: YaoGuangMing 2024-HDU</p><p class="note note-warning">转载请标明出处！</p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
     
     
     <categories>
       
-      <category>操作系统</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>计算机网络（计划更新）</title>
-    <link href="/2023/06/22/p6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    <url>/2023/06/22/p6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</url>
-    
-    <content type="html"><![CDATA[<p>1</p><span id="more"></span><p class="note note-success">author: YaoGuangMing 2023-HDU</p><p class="note note-warning">转载请标明出处！</p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-    
-    
-    <categories>
-      
-      <category>计算机网络</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>计算机组成原理（计划更新）</title>
-    <link href="/2023/06/22/p9%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/"/>
-    <url>/2023/06/22/p9%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/</url>
-    
-    <content type="html"><![CDATA[<span id="more"></span><div class='spoiler collapsed'>    <div class='spoiler-title'>        代码    </div>    <div class='spoiler-content'>        <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>&#123;<br><span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>    </div></div><p class="note note-success">author: YaoGuangMing 2023-HDU</p><p class="note note-warning">转载请标明出处！</p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-    
-    
-    <categories>
-      
-      <category>计算机组成原理</category>
+      <category>毕业设计</category>
       
     </categories>
     
